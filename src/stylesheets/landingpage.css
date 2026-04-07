@@ -88,6 +88,7 @@ header {
     transition: 0.3s;
 
     box-shadow: 0 5px #505050;
+    text-decoration: none;
 }
 
 .explore-btn:hover {
@@ -159,6 +160,9 @@ header {
     transition: 0.2s;
 
     font-weight: 800;
+    text-decoration: none;
+
+    color: black;
 }
 
 .order-btn:hover {
@@ -176,6 +180,9 @@ header {
     font-weight: 800;
 
     box-shadow: 0 5px #20211A;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .explore-more-btn:hover {
@@ -226,7 +233,7 @@ header {
 .featured-content > .featureds {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 5px;
 }
 
 .featureds > .featured-card {
