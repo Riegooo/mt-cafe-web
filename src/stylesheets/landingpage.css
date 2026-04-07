@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -46,6 +49,10 @@ header {
     font-size: 18px;
 }
 
+.logo > span {
+    font-weight: 800;
+}
+
 .logo > img {
     width: 50px;
     height: 50px;
@@ -79,6 +86,8 @@ header {
     gap: 8px;
     align-items: center;
     transition: 0.3s;
+
+    box-shadow: 0 5px #505050;
 }
 
 .explore-btn:hover {
@@ -90,7 +99,7 @@ header {
     max-width: 1200px; 
     margin: 0 auto;   
 
-    padding: 60px 40px;
+    padding: 40px;
     flex: 1;
     display: flex;
     align-items: center;
@@ -146,7 +155,7 @@ header {
     gap: 8px;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 5px #20211A;
     transition: 0.2s;
 }
 
@@ -162,6 +171,8 @@ header {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
+
+    box-shadow: 0 5px #20211A;
 }
 
 .explore-more-btn:hover {
@@ -180,7 +191,7 @@ header {
 
 
 
-.menu-container {
+.featured-container {
     background-image: url(../images/landingpage-menu-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -188,38 +199,88 @@ header {
     background-size: cover;
 }
 
-.menu-container > .menu-header {
+.featured-container > .featured-header {
     padding: 3rem;
     text-align: center;
 }
 
-.menu-header > h1 {
+.featured-header > h1 {
     font-size: 5rem;
     font-weight: 800;
     color: #DCB66F;
+
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
-.menu-container > .menu-content{
+.featured-container > .featured-content{
     max-width: 1600px; 
     margin: 0 auto;   
 
     padding: 1rem;
 }
 
-.menu-content > .menus {
+.featured-content > .featureds {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
-.menus > .menu-card {
-    border: 1px solid red;
+.featureds > .featured-card {
     text-align: center;
 }
 
-.menus > .menu-card > img {
+.featureds > .featured-card > img {
     height: 500px;
 }
 
-.menu-card > .menu-title{ 
-    border: 1px solid red;
+.featured-card > .featured-title{ 
+    padding: 10px;
+    background-color:#FDFBD4;
+    border-radius: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+.featured-title > h1 {
+    font-weight: 800;
+    font-size: 1.60rem;
+    color: #2A1F1B;
+}
+
+.featured-title > p {
+    margin-top: 10px;
+    font-size: 0.80rem;
+    color: #000000;
+
+    text-align: left;
+}
+
+.featured-title > .featured-item-price {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 10px;
+}
+
+.featured-item-price > h3 {
+    text-align: center;
+}
+
+.featured-item-price > button {
+    background-color: #2A1F1B;
+    padding: 10px;
+    color: #FDFBD4;
+    border: none;
+    border-radius: 10px;
+
+    box-shadow: 0 5px #DCB66F;
+}
+
+
+.featured-title > .line {
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
