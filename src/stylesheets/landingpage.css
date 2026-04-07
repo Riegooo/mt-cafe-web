@@ -243,8 +243,10 @@ header {
     border-radius: 20px;
 
     box-shadow: 0 5px #DCB66F;
-
     transition: all ease 0.4s;
+
+    max-width: 350px; 
+    margin: 0 auto;    
 }
 
 .featured-card > .featured-title:hover {
@@ -325,4 +327,74 @@ header {
 }
 .featured-button-discover > button:active {
     opacity: 0.8;
+}
+
+@media only screen and (max-width: 1530px) {
+    .featureds > .featured-card > img {
+        height: 300px;
+    }
+
+    .featured-card> .featured-title {
+        width: 300px;
+    }
+
+    .featured-title > h1 {
+        font-weight: 800;
+        font-size: 1.20rem;
+        color: #2A1F1B;
+    }
+
+    .featured-title > p {
+        margin-top: 10px;
+        font-size: 0.60rem;
+        color: #000000;
+
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .featured-card > .featured-title{
+        max-width: 200px; 
+        margin: 0 auto;    
+    }
+}
+
+
+@media only screen and (max-width: 840px) {
+    .featured-content > .featureds {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .featured-card > .featured-title{
+        max-width: 350px; 
+        margin: 0 auto;    
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .home-image {
+        display: none;
+    }
+
+    .home {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-text {
+        max-width: 100%;
+    }
+
+    .home-buttons {
+        justify-content: center;
+    }
 }
