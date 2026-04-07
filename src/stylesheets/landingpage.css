@@ -71,7 +71,7 @@ header {
 }
 
 .nav-links > li > a:hover {
-    color: white;
+    color: #FDFBD4;
 }
 
 .explore-btn {
@@ -157,6 +157,8 @@ header {
     cursor: pointer;
     box-shadow: 0 5px #20211A;
     transition: 0.2s;
+
+    font-weight: 800;
 }
 
 .order-btn:hover {
@@ -171,6 +173,7 @@ header {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
+    font-weight: 800;
 
     box-shadow: 0 5px #20211A;
 }
@@ -217,8 +220,7 @@ header {
 .featured-container > .featured-content{
     max-width: 1600px; 
     margin: 0 auto;   
-
-    padding: 1rem;
+    padding: 3rem 1rem;
 }
 
 .featured-content > .featureds {
@@ -232,7 +234,7 @@ header {
 }
 
 .featureds > .featured-card > img {
-    height: 500px;
+    height:450px;
 }
 
 .featured-card > .featured-title{ 
@@ -240,7 +242,14 @@ header {
     background-color:#FDFBD4;
     border-radius: 20px;
 
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: 0 5px #DCB66F;
+
+    transition: all ease 0.4s;
+}
+
+.featured-card > .featured-title:hover {
+    box-shadow: 0 10px #FDFBD4;
+    background-color:#DCB66F;
 }
 
 .featured-title > h1 {
@@ -276,11 +285,44 @@ header {
     border-radius: 10px;
 
     box-shadow: 0 5px #DCB66F;
+    transition: all ease 0.4s;
 }
 
+.featured-item-price > button:hover {
+    box-shadow: 0 5px #ffa600;
+}
 
 .featured-title > .line {
     border-bottom: 1px solid black;
     padding: 10px;
 }
 
+.featured-content > .featured-button-discover {
+    margin-top: 2rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.featured-button-discover > button {
+    padding: 10px;
+
+    border: none;
+    color: white;
+    border-radius: 5px;
+
+    box-shadow: 0 5px #FDFBD4;
+    background-color:#DCB66F;
+    font-weight: 700;
+    font-size: 1rem;
+
+    transition: all ease 0.3s;
+}
+.featured-button-discover > button:hover {
+    background-color:#ffe5b4;
+    transform: translateY(2px);
+    color: #2A1F1B;
+
+}
+.featured-button-discover > button:active {
+    opacity: 0.8;
+}
