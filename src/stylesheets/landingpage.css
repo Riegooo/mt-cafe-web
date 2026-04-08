@@ -166,8 +166,9 @@ header {
 }
 
 .order-btn:hover {
-    transform: translateY(2px);
+    transform: translateY(-2px);
 }
+
 
 .explore-more-btn {
     background-color: #0504aa;
@@ -186,6 +187,7 @@ header {
 }
 
 .explore-more-btn:hover {
+    transform: translateY(-2px);
     background-color: #1d4ed8;
 }
 
@@ -328,13 +330,54 @@ header {
 }
 .featured-button-discover > button:hover {
     background-color:#ffe5b4;
-    transform: translateY(2px);
+    transform: translateY(-2px);
     color: #2A1F1B;
 
 }
 .featured-button-discover > button:active {
     opacity: 0.8;
 }
+
+
+
+
+
+
+
+
+.about-container {
+
+}
+
+.about-container > .about-header {
+    padding: 3rem;
+    text-align: center;
+}
+
+.about-header > h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #20211A;
+
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1530px) {
     .featureds > .featured-card > img {

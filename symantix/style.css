@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem 5rem;
+}
+
+header > .logo {
+    display: flex;
+    align-items: center;
+}
+
+header > .logo > h1 {
+    margin-left: 10px;
+}
+
+header > .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-container {
+    border: 1px solid red;
+}
+
+.main-content {
+    border: 1px solid red;
+    display: flex;
+
+    padding: 2rem;
+}
+
+.side-bar {
+    border: 1px solid red;
+    padding: 2rem;
+
+    border-radius: 20px;
+}
+
+.side-bar > .sidebar-nav > ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.side-bar > .sidebar-nav > ul > li {
+    margin-top: 10px;
+}
+
+.side-bar > .sidebar-nav > ul > li > a {
+    text-decoration: none;
+
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 1.80rem;
+}
+
+
+
+.dashboard-main-content {
+    padding: 0 3rem;
+    width: 200rem;
+
+}
+
+.dashboard-main-content > .dashboard-header {
+    padding: 1rem 3rem;
+    border: 1px solid black;
+    max-width: 100%;
+    border-radius: 20px;
+
+    display: flex;
+    gap: 5rem;
+
+    margin-bottom: 2rem;
+}
+
+.dashboard-header > .student-info {
+    padding: 10px;
+}
+
+.student-info > .student-status {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 100%;
+
+    margin-bottom: 10px;
+}
+
+.student-status > h1 {
+    margin-right: 1rem;
+}
+
+.student-status > p {
+    font-size: 1.20rem;
+}
+
+.student-info > h2 {
+    margin-bottom: 10px;
+}
+
+.dashboard-header > img {
+    height: 200px;
+    margin-left: auto;
+}
+
+
+.hero {
+    display: grid;
+    grid-template-columns: 0.7fr 0.5fr;
+
+    gap: 1rem;
+}
+
+.hero > .left-hero > .hero-scholar-bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 2rem;
+
+    margin-bottom: 2rem;
+
+}
+
+
+.hero-scholar-bar > .left-hero-scholar {
+    text-align: center;
+
+    border: 1px solid rgb(0, 0, 0);
+
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.hero-scholar-bar > .left-hero-scholar > p > span{
+    display: block;
+}
+
+
+.hero-scholar-bar > .right-hero-scholar {
+    text-align: center;
+
+    border: 1px solid rgb(0, 0, 0);
+
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.hero-scholar-bar > .right-hero-scholar > p > span{
+    display: block;
+}
+
+.hero > .left-hero > .task {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.task > .left-task {
+    padding: 10px;
+}
+
+.task > .right-task {
+    padding: 10px;
+    border-left: 1px solid black;
+}
+
+.hero > .right-hero {
+    border: 1px solid black;
+    padding: 10px;
+
+    border-radius: 20px;
+}
+
+.right-hero > .news-header {
+    text-align: center;
+}
