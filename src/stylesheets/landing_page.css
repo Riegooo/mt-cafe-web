@@ -637,6 +637,128 @@ header {
 }
 
 
+
+
+
+
+
+footer {
+    padding: 2rem;
+    background-color: #2A1F1B;
+}
+
+footer > .footer-main-content {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.footer-main-content > .footer-contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-contents > .footer-logo > .footer-logo-items{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo-items > img {
+    height: 50px;
+    width: 50px;
+}
+
+.footer-logo-items > h1 {
+    font-size: 1.50rem;
+    color: #DCB66F;
+}
+
+.footer-logo > .footer-logo-text {
+    color: #FDFBD4;
+}
+
+
+
+.footer-header {
+    color: #DCB66F;
+}
+
+.footer-header > h1 {
+    font-size: 1.50rem;
+}
+
+.footer-contents > .footer-contact-info > .footer-contact-text {
+    margin-top: 10px;
+}
+
+.footer-contents > .footer-contact-info > .footer-contact-text > .footer-contact-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.footer-contact-card > p {
+    color: #fdfbd4a2;
+}
+
+
+
+.footer-contents > .footer-quicklinks > .footer-nav-links > li {
+    list-style: none;
+}
+
+.footer-nav-links > li > a{
+    text-decoration: none;
+    color: #FDFBD4;
+
+    transition: all ease 0.3s;
+}
+
+.footer-nav-links > li > a:hover{
+    color: #DCB66F;
+}
+
+
+.footer-contents > .footer-social > p {
+    color: #FDFBD4;
+}
+
+.footer-social > .footer-social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+}
+
+.footer-social-icons > i {
+    font-size: 1.50rem;
+}
+
+
+
+.footer-main-content > .footer-c {
+    text-align: center;
+    padding: 1.30rem;
+
+    border-top: 2px solid white;
+
+    margin-top: 10px;
+}
+
+.footer-c > p {
+    color: #FDFBD4;
+}
+
+.footer-c > p > span {
+    color: #DCB66F;
+}
+
+
+
+
+
+
 @media only screen and (max-width: 1440px) {
     .about-right > .about-text-header > h1 {
         font-size: 1.70rem;
@@ -852,6 +974,11 @@ header {
 
         border-radius: 10px;
     }
+
+    .footer-main-content > .footer-contents {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
 }
 
 @media only screen and (max-width: 750px) {
@@ -950,6 +1077,12 @@ header {
     .Home-buttons a {
         padding: 10px;
         font-size: 0.90rem;
+    }
+
+
+    .footer-main-content > .footer-contents {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
 
