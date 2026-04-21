@@ -24,10 +24,12 @@ body {
 header {
     width: 100%;
     padding: 10px;
+    margin: auto;
+    max-width: 1600px;
 }
 
 .navbar {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: auto;
 
     display: flex;
@@ -98,7 +100,7 @@ header {
 
 
 .home-container {
-    max-width: 1200px; 
+    max-width: 1600px; 
     margin: 0 auto;   
 
     padding: 40px;
@@ -205,11 +207,12 @@ header {
 
 
 .featured-container {
-    background-image: url(../images/landingpage-menu-bg.jpg);
+    /* background-image: url(../images/landingpage-menu-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
+    background-color: #2a1f1b;
 }
 
 .featured-container > .featured-header {
@@ -245,6 +248,7 @@ header {
 
 .featureds > .featured-card > img {
     height:450px;
+
 }
 
 .featured-card > .featured-title{ 
@@ -347,12 +351,19 @@ header {
 
 
 .about-container{
-    padding: 0rem 5rem;
+    background-image: url('../images/landingpage-background.jpg');
 }
 
-.about-container > .about-header {
+.about-container > .about-main-content {
+    padding: 0 5rem 5rem 5rem;
+    max-width: 1600px; 
+    margin: 0 auto;  
+}
+
+.about-container > .about-main-content > .about-header {
     padding: 2rem;
     text-align: left;
+    margin-bottom: 2rem;
 }
 
 .about-header > h1 {
@@ -366,9 +377,13 @@ header {
 }
 
 
-.about-container > .about-content {
-    background-color: #2a1f1bb2;
+.about-container > .about-main-content > .about-content {
+    background-color: #2a1f1be0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 5rem 6rem;
+
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .about-content > .about-content-one {
@@ -384,7 +399,7 @@ header {
 
 .about-content-one > img {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
 
     border-radius: 10px;
@@ -420,10 +435,26 @@ header {
     align-self: center;
 }
 
-.about-content-two > p {
+.about-content-two > .about-text-button > p {
     font-size: 1.20rem;
     color: #FDFBD4;
     text-align: left;
+}
+
+.about-text-button > .about-button {
+    margin-top: 1rem;
+    padding: 10px 0;
+}
+
+.about-text-button > .about-button > a {
+    background-color: #FDFBD4;
+    box-shadow: 0 5px #1b1513;
+
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #20211A;
+    font-weight: 600;
 }
 
 
@@ -431,10 +462,148 @@ header {
 
 
 
+.contact-us-container {
+    background-image: url('../images/landingpage-menu-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contact-us-container > .contact-us-main-content {
+    padding: 5rem 5rem;
+    max-width: 1600px; 
+    margin: auto;  
+}
+
+.contact-us-container > .contact-us-main-content > .contact-header {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-header > h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #FDFBD4;
+
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.contact-header > .contact-header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: 1.50em;
+    color: #FDFBD4;
+}
+
+.contact-us-container > .contact-us-main-content > .contact-us-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+
+    background-color: #2A1F1B;
+    box-shadow: 0 5px #FDFBD4;
+    border-radius: 10px;
+}
+
+.contact-us-main-content > .contact-us-content > .contact-left-content {
+    padding: 10px;
+}
+
+.contact-left-content > .contact-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    margin-top: 1rem;
+    padding: 15px;
+
+    background-color: #1b1513;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.contact-left-content > .contact-card:hover{
+    background-color: #302622;
+    box-shadow: 0 5px #FDFBD4;
+}
+
+.contact-card > i {
+    font-size: 2.10rem;
+}
+
+.contact-card > .contact-text {
+    color: #FDFBD4;
+}
+.contact-text > p {
+    color: #fdfbd4af;
+}
 
 
+.contact-us-content > .contact-right-content {
+    padding: 10px;
+}
+.contact-right-content > h1 {
+    color: #FDFBD4;
+}
 
+.contact-right-content > .contact-inputs {
+    padding: 10px 0;
+    margin-top: 10px;
+}
 
+.contact-inputs > input {
+    padding: 10px;
+    width: 100%;
+
+    margin-bottom: 20px;
+    background-color: #FDFBD4;
+    border: none;
+    border-radius: 7px;
+} 
+
+.contact-inputs > input::placeholder {
+    color: #2a1f1bdf;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contact-inputs > textarea {
+    padding: 10px;
+    background-color: #FDFBD4;
+    border: none;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.contact-inputs > textarea::placeholder{
+    color: #2a1f1bdf;
+    font-size: 1rem;
+    font-weight: 600;
+} 
+
+.contact-right-content > button {
+    padding: 10px;
+    width: 100%;
+    
+    border: none;
+    border-radius: 6px;
+    background-color: #DCB66F;
+    box-shadow: 0 5px #FDFBD4;
+    margin-top: 1rem;
+
+    font-size: 1.20rem;
+    font-weight: 600;
+}
 
 @media only screen and (max-width: 1530px) {
     .featureds > .featured-card > img {
@@ -491,10 +660,15 @@ header {
     }
 
     .about-content-one > p,
-    .about-content-two > p {
+    .about-content-two > .about-text-button > p {
         text-align: center;
 
         font-size: 1rem;
+    }
+
+    .contact-us-container > .contact-us-main-content > .contact-us-content {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -535,8 +709,12 @@ header {
     }
 
     .featured-container > .featured-header > h1,
-    .about-header > h1 {
+    .about-header > h1, .contact-header > h1 {
         font-size: 3rem;
+    }
+
+    .contact-header > .contact-header-text > p {
+        font-size: 1rem;
     }
 }
 
