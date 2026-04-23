@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/menu_page.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="side-bar">
+            <div class="sidebar-header">
+                <h1>MENU</h1>
+            </div>
+
+            <nav class="sidebar-nav-links">
+                <a href="" class="hot-beverage">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h1>Hot Beverages</h1>
+                </a>
+
+                <a href="" class="links">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    <h1>Cold Beverages</h1>
+                </a>
+
+                <a href="" class="links">
+                    <i class="fa-solid fa-bread-slice"></i>
+                    <h1>Bread</h1>
+                </a>
+
+                <a href="" class="links">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <h1>Food</h1>
+                </a>
+
+                <a href="" class="links">
+                    <i class="fa-solid fa-cookie"></i>
+                    <h1>Desserts</h1>
+                </a>
+            </nav>
+        </div>
+
+        <div class="left-contents">
+            <div class="header">
+                <div class="header-text">
+                    <a href="../index.html">
+                        <img src="../images/mt-cafe-logo.png" alt="">
+                        <h1>mT Cafe MENU</h1>
+                    </a>
+
+                    <div class="header-menu" id="menu-toggle">
+                        <i class="fa-solid fa-bars menu-icon" style="color: rgb(253, 251, 212);"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-menu-contents">
+                <div class="menu-items">
+                    <div class="menu-cards">
+                        <img src="../images/menu-images/hot-beverages/Americano-coffee.png" alt="">
+                        <div class="menu-item-info">
+                            <h2>Americano</h2>
+                            <p>
+                                Smooth espresso blended with hot water for a clean, balanced finish.
+                            </p>
+                            
+                            <div class="menu-item-buy">
+                                <p>₱120</p>
+                                <button>
+                                    <span>BUY NOW</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-cards">
+                        <img src="../images/menu-images/hot-beverages/Espresso-coffee.png" alt="">
+                        <div class="menu-item-info">
+                            <h2>Espresso</h2>
+                            <p>
+                                Rich, concentrated coffee with a bold flavor and velvety crema.
+                            </p>
+                            <div class="menu-item-buy">
+                                <p>₱100</p>
+                                <button>
+                                    <span>BUY NOW</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-cards">
+                        <img src="../images/menu-images/hot-beverages/Flat White.png" alt="">
+                        <div class="menu-item-info">
+                            <h2>Flat White</h2>
+                            <p>
+                                Velvety espresso with steamed milk for a smooth, balanced taste.
+                            </p>
+                            <div class="menu-item-buy">
+                                <p>₱140</p>
+                                <button>
+                                    <span>BUY NOW</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-cards">
+                        <img src="../images/menu-images/hot-beverages/Irish-coffee.png" alt="">
+                        <div class="menu-item-info">
+                            <h2>Irish Coffee</h2>
+                            <p>
+                                Coffee with Irish whiskey and cream, smooth and warmly indulgent.
+                            </p>
+                            <div class="menu-item-buy">
+                                <p>₱180</p>
+                                <button>
+                                    <span>BUY NOW</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-cards">
+                        <img src="../images/menu-images/hot-beverages/Macchiato-coffee.png" alt="">
+                        <div class="menu-item-info">
+                            <h2>Macchiato</h2>
+                            <p>
+                                Bold espresso marked with a touch of milk for a refined finish.
+                            </p>
+                            <div class="menu-item-buy">
+                                <p>₱130</p>
+                                <button>
+                                    <span>BUY NOW</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-cards">
+                        <img src="../images/menu-images/hot-beverages/MatchaLatte-coffee.png" alt="">
+                        <div class="menu-item-info">
+                            <h2>Matcha Latte</h2>
+                            <p>
+                                Creamy matcha and milk with a soft, earthy, and calming taste.
+                            </p>
+                            <div class="menu-item-buy">
+                                <p>₱160</p>
+                                <button>
+                                    <span>BUY NOW</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const menuTog = document.getElementById('menu-toggle');
+        const navLinks = document.querySelector('.side-bar');
+        const iconMenu = document.querySelector('.menu-icon');
+
+        menuTog.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+
+            if (navLinks.classList.contains("active")) {
+                iconMenu.classList.remove("fa-bars");
+                iconMenu.classList.add("fa-xmark")
+            } else {
+                iconMenu.classList.remove("fa-xmark");
+                iconMenu.classList.add("fa-bars");
+            }
+        });
+    </script>
+
+</body>
+</html>

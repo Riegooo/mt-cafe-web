@@ -26,7 +26,7 @@
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#Featured">Featured</a></li>
                 <li><a href="#About">About Us</a></li>
-                <li><a href="">Menu</a></li>
+                <li><a href="./pages/menu_page.html">Menu</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
 
@@ -34,8 +34,8 @@
                 <button>Explore More</button>
             </div>
 
-            <div class="header-menu">
-                <i class="fa-solid fa-bars" style="color: rgb(253, 251, 212);"></i>
+            <div class="header-menu" id="menu-toggle">
+                <i class="fa-solid fa-bars menu-icon" style="color: rgb(253, 251, 212);"></i>
             </div>
         </nav>
     </header>
@@ -55,11 +55,11 @@
                 </div>
 
                 <div class="Home-buttons">
-                    <a href="" class="ordernow-btn">
+                    <a href="./pages/menu_page.html" class="ordernow-btn">
                         ORDER NOW
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="" class="viewmore-btn">
+                    <a href="#Featured" class="viewmore-btn">
                         EXPLORE MORE
                     </a>
                 </div>
@@ -100,7 +100,7 @@
                 <div class="item-descript">
                     <h1>Strawberry Short Cake</h1>
                     <p>
-                        A light and fluffy shortcake layered with fresh, juicy strawberries and smooth whipped cream, finished with a perfectly ripe strawberry on top, perfect for any moment you want to treat yourself.
+                        A light, fluffy shortcake with fresh strawberries and whipped cream, topped with a ripe strawberry for a sweet treat anytime.
                     </p>
 
                     <div class="item-price">
@@ -133,8 +133,8 @@
             </div>
         </div>
         <div class="featured-view-button">
-            <a href="">
-                View Menu
+            <a href="./pages/menu_page.html">
+                Discover More
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
@@ -192,7 +192,7 @@
                         </div>
                     </div>
                     <div class="about-us-button">
-                        <a href="">
+                        <a href="./pages/menu_page.html">
                             View Menu
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -313,9 +313,15 @@
                     </div>
                     <p>Don't Forget to follow us on Social <span>Media</span></p>
                     <div class="footer-social-icons">
-                        <i class="fa-brands fa-facebook-f" style="color: rgb(253, 251, 212);"></i>
-                        <i class="fa-brands fa-youtube" style="color: rgb(253, 251, 212);"></i>
-                        <i class="fa-brands fa-twitter" style="color: rgb(253, 251, 212);"></i>
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -324,5 +330,23 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const menuTog = document.getElementById("menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        const icon = document.querySelector(".menu-icon");
+
+        menuTog.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+
+            if (navLinks.classList.contains("active")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+            } else {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+        });
+    </script>
 </body>
 </html>
