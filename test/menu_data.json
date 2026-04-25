@@ -1,0 +1,11 @@
+{
+    "Hot Beverage" : {
+        "Americano" : {
+            "description": "Smooth espresso blended with hot water for a clean, balanced finish.",
+            "img_path": "../images/menu-images/hot-beverages/Americano-coffee.png",
+            "price":  120,
+            "Ingredients": ["Espresso: 2 shots", "Hot Water"],
+            "Extended_Description": "Smooth espresso blended with hot water, creating a clean, balanced cup with a mild yet rich flavor and a subtle aroma—perfect for a simple, no-frills coffee anytime."
+        }
+    }
+}

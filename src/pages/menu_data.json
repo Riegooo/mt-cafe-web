@@ -1,0 +1,255 @@
+{
+    "hot_beverage" : {
+        "Americano" : {
+            "description": "Smooth espresso blended with hot water for a clean, balanced finish.",
+            "img_path": "../images/menu-images/hot-beverages/Americano-coffee.png",
+            "price":  120,
+            "Ingredients": ["Espresso: 2 shots", "Hot Water"],
+            "Extended_Description": "Smooth espresso blended with hot water, creating a clean, balanced cup with a mild yet rich flavor and a subtle aroma—perfect for a simple, no-frills coffee anytime."
+        },
+        "Espresso" : {
+            "description": "Rich, concentrated coffee with a bold flavor and velvety crema.",
+            "img_path": "../images/menu-images/hot-beverages/Espresso-coffee.png",
+            "price":  100,
+                "Ingredients": ["Ground Coffee", "Water"],
+                "Extended_Description": "A bold and concentrated shot of finely brewed coffee, delivering a rich flavor with a strong aroma and a slightly bitter finish—perfect for a quick, intense coffee boost."
+            },
+        "Macchiato" : {
+            "description": "Bold espresso marked with a touch of milk for a refined finish.",
+            "img_path": "../images/menu-images/hot-beverages/Macchiato-coffee.png",
+            "price":  120,
+            "Ingredients": ["Espresso: 1 o 2 shot", "Steamed Milk Foam"],
+            "Extended_Description": "A bold espresso marked with a small amount of steamed milk, creating a rich, strong flavor with a slight creamy touch—perfect for those who want intensity with a hint of smoothness."
+        },
+        "Matcha Latte" : {
+            "description": "Creamy matcha and milk with a soft, earthy, and calming taste.",
+            "img_path": "../images/menu-images/hot-beverages/MatchaLatte-coffee.png",
+            "price":  160,
+            "Ingredients": ["Espresso: 1 o 2 shot", "Steamed Milk Foam"],
+            "Extended_Description": "A bold espresso marked with a small amount of steamed milk, creating a rich, strong flavor with a slight creamy touch—perfect for those who want intensity with a hint of smoothness."
+        },
+        "Flat White" : {
+            "description": " Velvety espresso with steamed milk for a smooth, balanced taste.",
+            "img_path": "../images/menu-images/hot-beverages/flat.png",
+            "price":  140,
+            "Ingredients": ["Double Shot Espresso (Ristretto)", "Steamed Milk", "No added water"],
+            "Extended_Description": "A smooth and velvety coffee made with rich espresso and finely steamed milk, creating a creamy texture with a balanced, less foamy finish—perfect for a rich yet mellow coffee experience."
+        },
+        "Irish Coffee" : {
+            "description": "Coffee with Irish whiskey and cream, smooth and warmly indulgent.",
+            "img_path": "../images/menu-images/hot-beverages/irish-coffee.png",
+            "price":  180,
+            "Ingredients": ["Irish Whiskey", "Brown Sugar", "Heavy Cream"],
+            "Extended_Description": "A warm and rich coffee made with freshly brewed coffee, a touch of Irish whiskey, and lightly whipped cream, creating a smooth, slightly sweet drink with a comforting kick."
+        }
+    },
+
+    "cold_beverage" : {
+        "Lemon lime Iced Tea" : {
+            "description": "A refreshing blend of citrusy lemon and zesty lime over chilled tea.",
+            "img_path": "../images/menu-images/cold-beverages/Lemon-lime.png",
+            "price":  95,
+            "Ingredients": ["Black Tea", "Lemon Juice", "Lime Juice", "Simple Syrup", "Ice", "Lemon & Lime Slices"],
+            "Extended_Description": "A refreshing blend of citrusy lemon and zesty lime infused into chilled tea, delivering a crisp, tangy flavor with a light sweetness—perfect for cooling down on a warm day."
+        },
+        "Apple Iced tea" : {
+            "description": "Chilled tea infused with sweet and crisp apple flavor.",
+            "img_path": "../images/menu-images/cold-beverages/Apple-Iced-tea.png",
+            "price":  95,
+            "Ingredients": ["Black Tea", "Apple Juice or Apple Syrup", "Simple Syrup", "Ice", "Apple Slices"],
+            "Extended_Description": "Chilled tea infused with the naturally sweet and crisp flavor of apples, offering a smooth, fruity taste with a refreshing finish that’s both light and satisfying."
+        },
+        "Mango smoothie" : {
+            "description": "A creamy blend of ripe mangoes with a smooth, refreshing finish.",
+            "img_path": "../images/menu-images/cold-beverages/Mango-smoothie.png",
+            "price":  130,
+            "Ingredients": ["Ripe Mango", "Milk or Yogurt", "Ice", "Sugar or Honey"],
+            "Extended_Description": "A creamy blend of ripe, juicy mangoes perfectly pureed with ice and milk, creating a rich, tropical drink that’s sweet, refreshing, and irresistibly smooth."
+        },
+        "Rosemary & Orange Iced Tea" : {
+            "description": "A fragrant mix of citrus orange and herbal rosemary in chilled tea.",
+            "img_path": "../images/menu-images/cold-beverages/Orange-Iced-Tea.png",
+            "price":  115,
+            "Ingredients": ["Black Tea", "Fresh Orange Juice", "Rosemary Sprig", "Simple Syrup", "Ice", "Orange Slices"],
+            "Extended_Description": "A fragrant fusion of bright citrus orange and subtle herbal rosemary steeped in chilled tea, creating a unique, refreshing drink with a balanced sweet and aromatic profile."
+        },
+        "Iced Mocha" : {
+            "description": "Rich espresso blended with chocolate and milk over ice.",
+            "img_path": "../images/menu-images/cold-beverages/Iced-Mocha.png",
+            "price":  130,
+            "Ingredients": ["Espresso: 2 shots", "Chocolate Syrup", "Milk", "Ice", "Whipped Cream"],
+            "Extended_Description": "Rich espresso combined with smooth chocolate and creamy milk, served over ice for a perfectly balanced drink with bold coffee notes and a sweet, indulgent finish."
+        },
+        "Blueberry & mint Iced tea" : {
+            "description": "Fruity blueberry and cool mint blended into refreshing iced tea.",
+            "img_path": "../images/menu-images/cold-beverages/mint-Iced-tea.png",
+            "price":  110,
+            "Ingredients": ["Black Tea", "Blueberry Syrup or Fresh Blueberries", "Mint Leaves", "Simple Syrup", "Ice"],
+            "Extended_Description": "A refreshing iced tea infused with sweet blueberries and a hint of cool mint, creating a vibrant, fruity drink with a crisp and revitalizing finish."
+        },
+        "Salted caramel (Iced)" : {
+            "description": "Creamy iced drink with sweet caramel and a touch of salt.",
+            "img_path": "../images/menu-images/cold-beverages/Salted-caramel.png",
+            "price":  135,
+            "Ingredients": ["Espresso: 1–2 shots", "Caramel Syrup", "Milk", "Ice", "Pinch of Salt", "Whipped Cream"],
+            "Extended_Description": "A creamy iced beverage infused with rich caramel and a hint of salt, creating a perfectly balanced flavor that’s both sweet and slightly savory with a smooth finish."
+        },
+        "Strawberry milkshake" : {
+            "description": "A rich and creamy blend of strawberries and milk.",
+            "img_path": "../images/menu-images/cold-beverages/Strawberry-milkshake.png",
+            "price":  140,
+            "Ingredients": ["Fresh Strawberries", "Milk", "Vanilla Ice Cream", "Sugar", "Whipped Cream"],
+            "Extended_Description": "A rich and creamy milkshake made with sweet, ripe strawberries blended with smooth milk, delivering a luscious, fruity flavor in every sip."
+        },
+        "Matcha lattle (Iced)" : {
+            "description": "Smooth matcha blended with milk and served over ice.",
+            "img_path": "../images/menu-images/cold-beverages/Matcha-lattle.png",
+            "price":  140,
+            "Ingredients": ["Matcha Powder", "Milk", "Simple Syrup", "Ice"],
+            "Extended_Description": "Smooth, premium matcha blended with creamy milk and served over ice, offering a refreshing drink with a gentle earthy flavor and a naturally calming finish."
+        }
+        
+    },
+
+    "bread" : {
+        "Americano" : {
+            "description": "Smooth espresso blended with hot water for a clean, balanced finish.",
+            "img_path": "../images/menu-images/hot-beverages/Americano-coffee.png",
+            "price":  120,
+            "Ingredients": ["Espresso: 2 shots", "Hot Water"],
+            "Extended_Description": "Smooth espresso blended with hot water, creating a clean, balanced cup with a mild yet rich flavor and a subtle aroma—perfect for a simple, no-frills coffee anytime."
+        },
+        "Espresso" : {
+            "description": "Rich, concentrated coffee with a bold flavor and velvety crema.",
+            "img_path": "../images/menu-images/hot-beverages/Espresso-coffee.png",
+            "price":  100,
+            "Ingredients": ["Ground Coffee", "Water"],
+            "Extended_Description": "A bold and concentrated shot of finely brewed coffee, delivering a rich flavor with a strong aroma and a slightly bitter finish—perfect for a quick, intense coffee boost."
+        },
+        "Macchiato" : {
+            "description": "Bold espresso marked with a touch of milk for a refined finish.",
+            "img_path": "../images/menu-images/hot-beverages/Macchiato-coffee.png",
+            "price":  120,
+            "Ingredients": ["Espresso: 1 o 2 shot", "Steamed Milk Foam"],
+            "Extended_Description": "A bold espresso marked with a small amount of steamed milk, creating a rich, strong flavor with a slight creamy touch—perfect for those who want intensity with a hint of smoothness."
+        },
+        "Matcha Latte" : {
+            "description": "Creamy matcha and milk with a soft, earthy, and calming taste.",
+            "img_path": "../images/menu-images/hot-beverages/MatchaLatte-coffee.png",
+            "price":  160,
+            "Ingredients": ["Espresso: 1 o 2 shot", "Steamed Milk Foam"],
+            "Extended_Description": "A bold espresso marked with a small amount of steamed milk, creating a rich, strong flavor with a slight creamy touch—perfect for those who want intensity with a hint of smoothness."
+        },
+        "Flat White" : {
+            "description": " Velvety espresso with steamed milk for a smooth, balanced taste.",
+            "img_path": "../images/menu-images/hot-beverages/flat.png",
+            "price":  140,
+            "Ingredients": ["Double Shot Espresso (Ristretto)", "Steamed Milk", "No added water"],
+            "Extended_Description": "A smooth and velvety coffee made with rich espresso and finely steamed milk, creating a creamy texture with a balanced, less foamy finish—perfect for a rich yet mellow coffee experience."
+        },
+        "Irish Coffee" : {
+            "description": "Coffee with Irish whiskey and cream, smooth and warmly indulgent.",
+            "img_path": "../images/menu-images/hot-beverages/irish-coffee.png",
+            "price":  180,
+            "Ingredients": ["Irish Whiskey", "Brown Sugar", "Heavy Cream"],
+            "Extended_Description": "A warm and rich coffee made with freshly brewed coffee, a touch of Irish whiskey, and lightly whipped cream, creating a smooth, slightly sweet drink with a comforting kick."
+        }
+    },
+
+    "food" : {
+        "Americano" : {
+            "description": "Smooth espresso blended with hot water for a clean, balanced finish.",
+            "img_path": "../images/menu-images/hot-beverages/Americano-coffee.png",
+            "price":  120,
+            "Ingredients": ["Espresso: 2 shots", "Hot Water"],
+            "Extended_Description": "Smooth espresso blended with hot water, creating a clean, balanced cup with a mild yet rich flavor and a subtle aroma—perfect for a simple, no-frills coffee anytime."
+        },
+        "Espresso" : {
+            "description": "Rich, concentrated coffee with a bold flavor and velvety crema.",
+            "img_path": "../images/menu-images/hot-beverages/Espresso-coffee.png",
+            "price":  100,
+            "Ingredients": ["Ground Coffee", "Water"],
+            "Extended_Description": "A bold and concentrated shot of finely brewed coffee, delivering a rich flavor with a strong aroma and a slightly bitter finish—perfect for a quick, intense coffee boost."
+        },
+        "Macchiato" : {
+            "description": "Bold espresso marked with a touch of milk for a refined finish.",
+            "img_path": "../images/menu-images/hot-beverages/Macchiato-coffee.png",
+            "price":  120,
+            "Ingredients": ["Espresso: 1 o 2 shot", "Steamed Milk Foam"],
+            "Extended_Description": "A bold espresso marked with a small amount of steamed milk, creating a rich, strong flavor with a slight creamy touch—perfect for those who want intensity with a hint of smoothness."
+        },
+        "Matcha Latte" : {
+            "description": "Creamy matcha and milk with a soft, earthy, and calming taste.",
+            "img_path": "../images/menu-images/hot-beverages/MatchaLatte-coffee.png",
+            "price":  160,
+            "Ingredients": ["Espresso: 1 o 2 shot", "Steamed Milk Foam"],
+            "Extended_Description": "A bold espresso marked with a small amount of steamed milk, creating a rich, strong flavor with a slight creamy touch—perfect for those who want intensity with a hint of smoothness."
+        },
+        "Flat White" : {
+            "description": " Velvety espresso with steamed milk for a smooth, balanced taste.",
+            "img_path": "../images/menu-images/hot-beverages/flat.png",
+            "price":  140,
+            "Ingredients": ["Double Shot Espresso (Ristretto)", "Steamed Milk", "No added water"],
+            "Extended_Description": "A smooth and velvety coffee made with rich espresso and finely steamed milk, creating a creamy texture with a balanced, less foamy finish—perfect for a rich yet mellow coffee experience."
+        },
+        "Irish Coffee" : {
+            "description": "Coffee with Irish whiskey and cream, smooth and warmly indulgent.",
+            "img_path": "../images/menu-images/hot-beverages/irish-coffee.png",
+            "price":  180,
+            "Ingredients": ["Irish Whiskey", "Brown Sugar", "Heavy Cream"],
+            "Extended_Description": "A warm and rich coffee made with freshly brewed coffee, a touch of Irish whiskey, and lightly whipped cream, creating a smooth, slightly sweet drink with a comforting kick."
+        }
+    },
+
+    "dessert" : {
+        "Strawberry short cake": {
+            "description": "Soft layered sponge cake with cream and fresh strawberries for a light dessert experience",
+            "img_path": "../images/menu-images/desserts/Strawberry-Shortcake.png",
+            "price": 150,
+            "Ingredients": [
+            "All-purpose flour", "Sugar", "Eggs", "Milk", "Butter", "Baking powder", "Vanilla extract", "Fresh strawberries", "Whipped cream (heavy cream + sugar)", "Optional: Powdered sugar"
+            ],
+            "Extended_Description": "A delightful blend of soft, fluffy cake layered with smooth cream and fresh strawberries, offering a light, sweet flavor with a hint of fruity freshness—perfect for a satisfying treat."
+        },
+
+        "Salted Ice Cream": {
+            "description": "Creamy ice cream enhanced with a light salt balance for deeper flavor.",
+            "img_path": "../images/menu-images/desserts/Salted-Ice-Cream.png",
+            "price": 110,
+            "Ingredients": [
+            "Milk", "Heavy cream", "Sugar", "Egg yolks (optional)", "Vanilla extract", "Salt"
+            ],
+            "Extended_Description": "A rich and creamy frozen dessert with smooth vanilla flavor and a subtle hint of salt, delivering a balanced sweet and savory taste with a velvety texture."
+        },
+
+        "Tarts": {
+            "description": "Buttery tart shell with smooth custard and fresh fruit topping finished with glaze.",
+            "img_path": "../images/menu-images/desserts/Tarts.png",
+            "price": 130,
+            "Ingredients": [
+            "Fresh strawberries", "All-purpose flour", "Butter", "Sugar", "Egg yolk", "Heavy cream or milk", "Cornstarch", "Vanilla extract", "Apricot jam or glaze"
+            ],
+            "Extended_Description": "A crisp buttery crust filled with silky custard and topped with fresh fruits, creating a balance of sweet and slightly tangy flavors—perfect for a light and elegant dessert."
+        },
+
+        "Pudding": {
+            "description": "Classic silky caramel custard dessert with smooth texture.",
+            "img_path": "../images/menu-images/desserts/Pudding.png",
+            "price": 90,
+            "Ingredients": [
+            "Eggs", "Sweetened condensed milk", "Evaporated milk", "Sugar (for caramel)", "Vanilla extract"
+            ],
+            "Extended_Description": "A smooth and creamy custard topped with a rich, golden caramel glaze, offering a melt-in-your-mouth texture with perfectly balanced sweetness."
+        },
+
+        "Waffles": {
+            "description": "Crispy golden waffles served warm with syrup and butter.",
+            "img_path": "../images/menu-images/desserts/Waffles.png",
+            "price": 150,
+            "Ingredients": [
+            "All-purpose flour", "Baking powder", "Sugar", "Salt", "Eggs", "Milk", "Butter (melted)", "Vanilla extract", "Maple syrup"
+            ],
+            "Extended_Description": "Golden, crisp waffles with a soft fluffy center, drizzled with rich maple syrup and topped with melting butter for a warm and comforting bite."
+        }
+    }
+}

@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>mT Cafe - Menus</title>
     <link rel="stylesheet" href="../stylesheets/menu_page.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&family=Poppins:wght@100..900&family=Righteous&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -16,30 +20,30 @@
             </div>
 
             <nav class="sidebar-nav-links">
-                <a href="" class="hot-beverage">
+                <button id="hot_beverage" class="selected">
                     <i class="fa-solid fa-mug-hot"></i>
                     <h1>Hot Beverages</h1>
-                </a>
+                </button>
 
-                <a href="" class="links">
+                <button id="cold_beverage">
                     <i class="fa-solid fa-mug-saucer"></i>
                     <h1>Cold Beverages</h1>
-                </a>
+                </button>
 
-                <a href="" class="links">
+                <button id="bread">
                     <i class="fa-solid fa-bread-slice"></i>
                     <h1>Bread</h1>
-                </a>
+                </button>
 
-                <a href="" class="links">
+                <button id="food">
                     <i class="fa-solid fa-bowl-food"></i>
                     <h1>Food</h1>
-                </a>
+                </button>
 
-                <a href="" class="links">
+                <button id="dessert">
                     <i class="fa-solid fa-cookie"></i>
                     <h1>Desserts</h1>
-                </a>
+                </button>
             </nav>
         </div>
 
@@ -58,358 +62,13 @@
             </div>
 
             <div class="left-menu-contents">
-                <div class="menu-items">
-                    <div class="menu-cards">
-                        <img src="../images/menu-images/hot-beverages/Americano-coffee.png" alt="">
-                        <div class="menu-item-info">
-                            <div class="menu-item-title" id="item-toggle-americano">
-                                <h2>Americano</h2>
-                                <i class="fa-solid fa-circle-info menu-item"></i>
-                            </div>
-                            <p>
-                                Smooth espresso blended with hot water for a clean, balanced finish.
-                            </p>
-                            
-                            <div class="menu-item-buy">
-                                <p>₱120</p>
-                                <button>
-                                    <span>BUY NOW</span>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                                
-                            </div>
-                        </div>
-
-                        
-                        <div class="click_image_info-americano">
-                            <div class="info-container-americano">
-                                <div class="info-contents-camericano">
-                                    <i class="fa-solid fa-xmark close-info-americano"></i>
-                                    <img src="../images/menu-images/hot-beverages/Americano-coffee.png" alt="">
-                                    <div class="info-header">
-                                        <h3>Americano</h3>
-                                    </div>
-                                    <div class="info-texts">
-                                        <p>
-                                            Smooth espresso blended with hot water, creating a clean, balanced cup with a mild yet rich flavor and a subtle aroma—perfect for a simple, no-frills coffee anytime.
-                                        </p>
-                                    </div>
-
-                                    <div class="info-specs">
-                                        <div class="item-ingredients">
-                                            <div class="ingredients-header">
-                                                <h3>Ingredients</h3>
-                                            </div>
-                                            <p>
-                                                Espresso: 2 shots
-                                            </p>
-                                            <p>Hot Water</p>
-                                        </div>
-
-                                        <div class="item-kcal">
-                                            <div class="kcal-header">
-                                                <h3>KCAL</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="menu-cards">
-                        <img src="../images/menu-images/hot-beverages/Espresso-coffee.png" alt="">
-                        <div class="menu-item-info">
-                            <div class="menu-item-title" id="item-toggle-espresso">
-                                <h2>Espresso</h2>
-                                <i class="fa-solid fa-circle-info menu-item"></i>
-                            </div>
-                            <p>
-                                Rich, concentrated coffee with a bold flavor and velvety crema.
-                            </p>
-                            <div class="menu-item-buy">
-                                <p>₱100</p>
-                                <button>
-                                    <span>BUY NOW</span>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="click_image_info-espresso">
-                            <div class="info-container-espresso">
-                                <div class="info-contents-cespresso">
-                                    <i class="fa-solid fa-xmark close-info-espresso"></i>
-                                    <img src="../images/menu-images/hot-beverages/Espresso-coffee.png" alt="">
-                                    <div class="info-header">
-                                        <h3>Espresso</h3>
-                                    </div>
-                                    <div class="info-texts">
-                                        <p>
-                                            A bold and concentrated shot of finely brewed coffee, delivering a rich flavor with a strong aroma and a slightly bitter finish—perfect for a quick, intense coffee boost.
-                                        </p>
-                                    </div>
-
-                                    <div class="info-specs">
-                                        <div class="item-ingredients">
-                                            <div class="ingredients-header">
-                                                <h3>Ingredients</h3>
-                                            </div>
-                                            <p>
-                                                Ground Coffee
-                                            </p>
-                                            <p>Water</p>
-                                        </div>
-
-                                        <div class="item-kcal">
-                                            <div class="kcal-header">
-                                                <h3>KCAL</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="menu-cards">
-                        <img src="../images/menu-images/hot-beverages/Flat White.png" alt="">
-                        <div class="menu-item-info">
-                            <div class="menu-item-title" id="item-toggle-flat">
-                                <h2>Flat White</h2>
-                                <i class="fa-solid fa-circle-info menu-item-info"></i>
-                            </div>
-                            <p>
-                                Velvety espresso with steamed milk for a smooth, balanced taste.
-                            </p>
-                            <div class="menu-item-buy">
-                                <p>₱140</p>
-                                <button>
-                                    <span>BUY NOW</span>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div>
-                        </div>
-
-
-                        <div class="click_image_info-flat">
-                            <div class="info-container-flat">
-                                <div class="info-contents-cflat">
-                                    <i class="fa-solid fa-xmark close-info-flat"></i>
-                                    <img src="../images/menu-images/hot-beverages/Flat White.png" alt="">
-                                    <div class="info-header">
-                                        <h3>Flat White</h3>
-                                    </div>
-                                    <div class="info-texts">
-                                        <p>
-                                            A smooth and velvety coffee made with rich espresso and finely steamed milk, creating a creamy texture with a balanced, less foamy finish—perfect for a rich yet mellow coffee experience.
-                                        </p>
-                                    </div>
-
-                                    <div class="info-specs">
-                                        <div class="item-ingredients">
-                                            <div class="ingredients-header">
-                                                <h3>Ingredients</h3>
-                                            </div>
-                                            <p>
-                                                Double Shot Espresso (Ristretto)
-                                            </p>
-                                            <p>Steamed Milk</p>
-                                            <p>No added water</p>
-                                        </div>
-
-                                        <div class="item-kcal">
-                                            <div class="kcal-header">
-                                                <h3>KCAL</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                    <div class="menu-cards">
-                        <img src="../images/menu-images/hot-beverages/Irish-coffee.png" alt="">
-                        <div class="menu-item-info">
-                            <div class="menu-item-title" id="item-toggle-irish">
-                                <h2>Irish Coffee</h2>
-                                <i class="fa-solid fa-circle-info menu-item"></i>
-                            </div>
-                            <p>
-                                Coffee with Irish whiskey and cream, smooth and warmly indulgent.
-                            </p>
-                            <div class="menu-item-buy">
-                                <p>₱180</p>
-                                <button>
-                                    <span>BUY NOW</span>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="click_image_info-irish">
-                            <div class="info-container-irish">
-                                <div class="info-contents-cirish">
-                                    <i class="fa-solid fa-xmark close-info-irish"></i>
-                                    <img src="../images/menu-images/hot-beverages/irish-coffee.png" alt="">
-                                    <div class="info-header">
-                                        <h3>Irish Coffee</h3>
-                                    </div>
-                                    <div class="info-texts">
-                                        <p>
-                                            A warm and rich coffee made with freshly brewed coffee, a touch of Irish whiskey, and lightly whipped cream, creating a smooth, slightly sweet drink with a comforting kick.
-                                        </p>
-                                    </div>
-
-                                    <div class="info-specs">
-                                        <div class="item-ingredients">
-                                            <div class="ingredients-header">
-                                                <h3>Ingredients</h3>
-                                            </div>
-                                            <p>
-                                                Hot Coffee
-                                            </p>
-                                            <p>Irish Whiskey</p>
-                                            <p>Brown Sugar</p>
-                                            <p>Heavy Cream</p>
-                                        </div>
-
-                                        <div class="item-kcal">
-                                            <div class="kcal-header">
-                                                <h3>KCAL</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="menu-cards">
-                        <img src="../images/menu-images/hot-beverages/Macchiato-coffee.png" alt="" title="View Specs">
-                        <div class="menu-item-info">
-                            <div class="menu-item-title" id="item-toggle-macchiato">
-                                <h2>Macchiato</h2>
-                                <i class="fa-solid fa-circle-info menu-item"></i>
-                            </div>
-                            <p>
-                                Bold espresso marked with a touch of milk for a refined finish.
-                            </p>
-                            <div class="menu-item-buy">
-                                <p>₱130</p>
-                                <button>
-                                    <span>BUY NOW</span>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div>
-                        </div>
-
-
-                        <div class="click_image_info-macchiato">
-                            <div class="info-container-macchiato">
-                                <div class="info-contents-cmacchiato">
-                                    <i class="fa-solid fa-xmark close-info-macchiato"></i>
-                                    <img src="../images/menu-images/hot-beverages/Macchiato-coffee.png" alt="">
-                                    <div class="info-header">
-                                        <h3>Macchiato</h3>
-                                    </div>
-                                    <div class="info-texts">
-                                        <p>
-                                            A bold espresso marked with a small amount of steamed milk, creating a rich, strong flavor with a slight creamy touch—perfect for those who want intensity with a hint of smoothness.
-                                        </p>
-                                    </div>
-
-                                    <div class="info-specs">
-                                        <div class="item-ingredients">
-                                            <div class="ingredients-header">
-                                                <h3>Ingredients</h3>
-                                            </div>
-                                            <p>
-                                                Espresso: 1 o 2 shot
-                                            </p>
-                                            <p>Steamed Milk Foam</p>
-                                        </div>
-
-                                        <div class="item-kcal">
-                                            <div class="kcal-header">
-                                                <h3>KCAL</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="menu-cards">
-                        <img src="../images/menu-images/hot-beverages/MatchaLatte-coffee.png" alt="">
-                        <div class="menu-item-info">
-                            <div class="menu-item-title" id="item-toggle-matcha">
-                                <h2>Matcha Latte</h2>
-                                <i class="fa-solid fa-circle-info menu-item"></i>
-                            </div>
-                            <p>
-                                Creamy matcha and milk with a soft, earthy, and calming taste.
-                            </p>
-                            <div class="menu-item-buy">
-                                <p>₱160</p>
-                                <button>
-                                    <span>BUY NOW</span>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="click_image_info-matcha">
-                            <div class="info-container-matcha">
-                                <div class="info-contents-cmatcha">
-                                    <i class="fa-solid fa-xmark close-info-matcha"></i>
-                                    <img src="../images/menu-images/hot-beverages/MatchaLatte-coffee.png" alt="">
-                                    <div class="info-header">
-                                        <h3>Matcha Latte</h3>
-                                    </div>
-                                    <div class="info-texts">
-                                        <p>
-                                            A bold espresso marked with a small amount of steamed milk, creating a rich, strong flavor with a slight creamy touch—perfect for those who want intensity with a hint of smoothness.
-                                        </p>
-                                    </div>
-
-                                    <div class="info-specs">
-                                        <div class="item-ingredients">
-                                            <div class="ingredients-header">
-                                                <h3>Ingredients</h3>
-                                            </div>
-                                            <p>
-                                                Espresso: 1 o 2 shot
-                                            </p>
-                                            <p>Steamed Milk Foam</p>
-                                        </div>
-
-                                        <div class="item-kcal">
-                                            <div class="kcal-header">
-                                                <h3>KCAL</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-
+                <div class="menu-items" id="menu">
                     
                 </div>
             </div>
         </div>
     </div>
 
-    
     
     <script src="../Javascript/menu_page.js"></script>
 

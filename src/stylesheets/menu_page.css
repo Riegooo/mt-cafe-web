@@ -21,7 +21,7 @@ body {
 }
 
 .main-container > .side-bar {
-    width: 300px;
+    width: 280px;
     height: 100vh;
 
     background-color: #2A1F1B;
@@ -30,7 +30,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-}
+} 
 
 .side-bar > .sidebar-header {
     padding: 2rem;
@@ -46,35 +46,40 @@ body {
     margin-top: 1rem;
 }
 
-.sidebar-nav-links > a {
+.sidebar-nav-links > button {
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 15px;
 
     margin-top: 1rem;
-    padding: 10px;
+    padding: 10px 2rem;
 
     color: #FDFBD4;
     text-align: center;
 
     transition: all ease 0.2s;
+
+    background-color: transparent;
+    border: none;
+
+    width: 100%;
 }
 
-.sidebar-nav-links > a > h1 {
+.sidebar-nav-links > button > h1 {
     font-size: 1.20rem;
 }
 
-.sidebar-nav-links > a > i  {
+.sidebar-nav-links > button > i  {
     font-size: 1.20rem;
 }
 
-.sidebar-nav-links > .hot-beverage {
+.sidebar-nav-links > .selected {
     background-color: #DCB66F;
     color: #2A1F1B;
 }
 
-.sidebar-nav-links > .links:hover {
+.sidebar-nav-links > button:hover {
     background-color: #DCB66F;
     color: #2A1F1B;
 }
@@ -146,7 +151,12 @@ body {
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 1rem;
+
+    transition: all ease 0.3s;
+
+    border-radius: 10px;
 }
+
 
 
 .menu-items > .menu-cards > img {
@@ -167,7 +177,15 @@ body {
     padding: 1rem;
 
     background-color: #2A1F1B;
-    border-radius: 10px;
+    border-radius: 5px;
+
+    transition: all ease 0.3s;
+
+    border-top-left-radius: 20px;
+}
+
+.menu-item-info:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 
@@ -181,13 +199,7 @@ body {
 
 
 
-
-.menu-cards > .click_image_info-americano, 
-.menu-cards > .click_image_info-espresso,
-.menu-cards > .click_image_info-flat,
-.menu-cards > .click_image_info-macchiato, 
-.menu-cards > .click_image_info-irish,
-.menu-cards > .click_image_info-matcha {
+.menu-cards > .click_image_info {
         position: fixed;
         top: 0;
         left: 0;
@@ -210,34 +222,19 @@ body {
         pointer-events: none;
 }
 
-.menu-cards > .click_image_info-americano.active,
-.menu-cards > .click_image_info-espresso.active,
-.menu-cards > .click_image_info-flat.active,
-.menu-cards > .click_image_info-macchiato.active,
-.menu-cards > .click_image_info-irish.active,
-.menu-cards > .click_image_info-matcha.active {
+.menu-cards > .click_image_info.active {
         transform: translateY(0);
         pointer-events: auto;
         display: block;
 }
 
-.click_image_info-americano > .info-container-americano,
-.click_image_info-espresso > .info-container-espresso,
-.click_image_info-flat > .info-container-flat,
-.click_image_info-macchiato > .info-container-macchiato,
-.click_image_info-irish > .info-container-irish,
-.click_image_info-matcha > .info-container-matcha {
+.click_image_info > .info-container {
     padding: 1rem;
     max-width: 1200px;
     margin: auto;
 }
 
-.info-container-americano > .info-contents-camericano,
-.info-container-espresso > .info-contents-cespresso,
-.info-container-flat > .info-contents-cflat,
-.info-container-macchiato > .info-contents-cmacchiato,
-.info-container-irish > .info-contents-cirish,
-.info-container-matcha > .info-contents-cmatcha{
+.info-container > .info-contents-c{
     width: 90%;
     max-width: 700px;
     margin: 50px auto; 
@@ -245,14 +242,12 @@ body {
     border-radius: 10px;
 
     background-color: #FDFBD4;
+
+    height: 100vh;
+    overflow-y: auto; 
 }
 
-.info-container-americano > .info-contents-camericano > i, 
-.info-container-espresso > .info-contents-cespresso > i,
-.info-container-flat > .info-contents-cflat > i,
-.info-container-macchiato > .info-contents-cmacchiato > i,
-.info-container-irish > .info-contents-cirish > i,
-.info-container-matcha > .info-contents-cmatcha > i {
+.info-container > .info-contents-c > i {
     background-color: #DCB66F;
     padding: 10px;
     border-radius: 5px;
@@ -267,32 +262,17 @@ body {
     margin-bottom: 1rem;
 }
 
-.info-container-americano > .info-contents-camericano > i:hover, 
-.info-container-espresso > .info-contents-cespresso > i:hover,
-.info-container-flat > .info-contents-cflat > i:hover,
-.info-container-macchiato > .info-contents-cmacchiato > i:hover,
-.info-container-irish > .info-contents-cirish > i:hover,
-.info-container-matcha > .info-contents-cmatcha > i:hover {
+.info-container > .info-contents-c > i:hover {
     background-color: #cca55b;
     transform: translateY(2px);
     box-shadow: 0 2px #2A1F1B;
 }
 
-.info-container-americano > .info-contents-camericano > i:active, 
-.info-container-espresso > .info-contents-cespresso > i:active,
-.info-container-flat > .info-contents-cflat > i:active,
-.info-container-macchiato > .info-contents-cmacchiato > i:active,
-.info-container-irish > .info-contents-cirish > i:active
-.info-container-matcha > .info-contents-cmatcha > i:active {
+.info-container > .info-contents-c > i:active {
     opacity: 0.7;
 }
 
-.click_image_info-americano > .info-container-americano > .info-contents-camericano > img,
-.click_image_info-espresso > .info-container-espresso > .info-contents-cespresso > img,
-.click_image_info-flat > .info-container-flat > .info-contents-cflat > img,
-.click_image_info-macchiato > .info-container-macchiato > .info-contents-cmacchiato > img,
-.click_image_info-irish > .info-container-irish > .info-contents-cirish > img,
-.click_image_info-matcha > .info-container-matcha > .info-contents-cmatcha > img  {
+.click_image_info > .info-container > .info-contents-c > img {
     max-width: 200px;
     width: 100%;
     object-fit: contain;
@@ -305,34 +285,29 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.info-container-americano > .info-contents-camericano > .info-header,
-.info-container-espresso > .info-contents-cespresso > .info-header,
-.info-container-flat > .info-contents-cflat > .info-header,
-.info-container-macchiato > .info-contents-cmacchiato > .info-header,
-.info-container-irish > .info-contents-cirish > .info-header,
-.info-container-matcha > .info-contents-cmatcha > .info-header {
+.info-container > .info-contents-c > .info-header{
     text-align: center;
     margin-bottom: 1.20rem;
 }
 
-.info-contents-camericano > .info-texts,
-.info-contents-cespresso > .info-texts,
-.info-contents-cflat > .info-texts,
-.info-contents-cmacchiato > .info-texts,
-.info-contents-cirish > .info-texts,
-.info-contents-cmatcha > .info-texts { 
+.info-header > h3 {
+    font-size: 2rem;
+
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    font-weight: 800;
+    color: #2A1F1B;
+}
+
+.info-contents-c > .info-texts { 
     background-color: #dcb66f6a;
     padding: 1rem;
     border-radius: 5px;
 }
 
-
-.info-contents-camericano > .info-specs,
-.info-contents-cespresso > .info-specs,
-.info-contents-cflat > .info-specs,
-.info-contents-cmacchiato > .info-specs,
-.info-contents-cirish > .info-specs,
-.info-contents-cmatcha > .info-specs {
+.info-contents-c > .info-specs {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
@@ -385,10 +360,13 @@ body {
     padding: 10px;
     background-color: #504440ee;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all ease 0.2s;
 }
 
 .menu-item-info > .menu-item-title > i:hover {
     color: #DCB66F;
+    transform: translateY(-2px);
 }
 
 .menu-item-info > .menu-item-title > i:active {
@@ -419,7 +397,13 @@ body {
     background-color: #DCB66F;
     color: #2A1F1B;
     font-weight: 700;
+    transition: all ease 0.3s;
 }
+
+.menu-item-buy > button:hover {
+    transform: translateY(-2px);
+}
+
 
 
 @media only screen and (max-width: 1500px) {
@@ -508,12 +492,7 @@ body {
 }
 
 @media only screen and (max-width: 400px)  {
-    .info-contents-camericano > .info-specs,
-    .info-contents-cespresso > .info-specs,
-    .info-contents-cflat > .info-specs,
-    .info-contents-cmacchiato > .info-specs,
-    .info-contents-cirish > .info-specs,
-    .info-contents-cmatcha > .info-specs {
+    .info-contents-c > .info-specs {
         grid-template-columns: 1fr;
         gap: 1rem;
     }

@@ -269,6 +269,12 @@ header {
     width: 100%;
 
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transition: all ease 0.3s;
+}
+
+.featured-card > .item-descript:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transform: translateY(-2px);
 }
 
 .item-descript > h1 {
