@@ -112,92 +112,85 @@
     },
 
     "bread" : {
-        "Americano" : {
-            "description": "Smooth espresso blended with hot water for a clean, balanced finish.",
-            "img_path": "../images/menu-images/hot-beverages/Americano-coffee.png",
+        "Cinnamon Roll" : {
+            "description":  "A soft, sweet pastry rolled with cinnamon sugar and topped with icing.",
+            "img_path": "../images/menu-images/bread/Cinnamon.png",
             "price":  120,
-            "Ingredients": ["Espresso: 2 shots", "Hot Water"],
-            "Extended_Description": "Smooth espresso blended with hot water, creating a clean, balanced cup with a mild yet rich flavor and a subtle aroma—perfect for a simple, no-frills coffee anytime."
+            "Ingredients": ["Flour", "Sugar", "Butter", "Milk", "eggs", "yeast", "cinnamon", "salt", "powdered sugar", "vanilla extract"],
+            "Extended_Description": "A soft, fluffy pastry layered with cinnamon sugar and topped with sweet, creamy icing. Warm, aromatic, and perfectly balanced with buttery richness in every bite."
         },
-        "Espresso" : {
-            "description": "Rich, concentrated coffee with a bold flavor and velvety crema.",
-            "img_path": "../images/menu-images/hot-beverages/Espresso-coffee.png",
+        "Bagel" : {
+            "description": "A dense, chewy bread with a slightly crispy crust, usually shaped like a ring.",
+            "img_path": "../images/menu-images/bread/Bagel.png",
             "price":  100,
-            "Ingredients": ["Ground Coffee", "Water"],
-            "Extended_Description": "A bold and concentrated shot of finely brewed coffee, delivering a rich flavor with a strong aroma and a slightly bitter finish—perfect for a quick, intense coffee boost."
+            "Ingredients": ["Flour", "Water", "yeast", "salt", "sugar or malt syrup"],
+            "Extended_Description": "A dense and chewy bread with a lightly crisp crust, known for its satisfying texture. Versatile and filling, perfect with both sweet and savory toppings."
         },
-        "Macchiato" : {
-            "description": "Bold espresso marked with a touch of milk for a refined finish.",
-            "img_path": "../images/menu-images/hot-beverages/Macchiato-coffee.png",
+        "Garlic Bread" : {
+            "description": "Toasted bread flavored with garlic and butter, often served as a side dish.",
+            "img_path": "../images/menu-images/bread/Garlic.png",
             "price":  120,
-            "Ingredients": ["Espresso: 1 o 2 shot", "Steamed Milk Foam"],
-            "Extended_Description": "A bold espresso marked with a small amount of steamed milk, creating a rich, strong flavor with a slight creamy touch—perfect for those who want intensity with a hint of smoothness."
+            "Ingredients": ["Bread", "Butter", "Garlic", "Parsley", "Salt"],
+            "Extended_Description": "Crispy toasted bread infused with rich butter and garlic. Savory and aromatic, with a golden crust and soft center that makes it a perfect side or snack."
         },
-        "Matcha Latte" : {
-            "description": "Creamy matcha and milk with a soft, earthy, and calming taste.",
-            "img_path": "../images/menu-images/hot-beverages/MatchaLatte-coffee.png",
+        "Honey Buttered Toast" : {
+            "description": "Toasted bread spread with a sweet mixture of honey and butter.",
+            "img_path": "../images/menu-images/bread/Honey.png",
             "price":  160,
-            "Ingredients": ["Espresso: 1 o 2 shot", "Steamed Milk Foam"],
-            "Extended_Description": "A bold espresso marked with a small amount of steamed milk, creating a rich, strong flavor with a slight creamy touch—perfect for those who want intensity with a hint of smoothness."
+            "Ingredients": ["Bread", "Butter", "Honey"],
+            "Extended_Description": "Golden toasted bread spread with a smooth blend of butter and honey. Sweet, rich, and slightly crisp, offering a simple yet comforting treat."
         },
-        "Flat White" : {
-            "description": " Velvety espresso with steamed milk for a smooth, balanced taste.",
-            "img_path": "../images/menu-images/hot-beverages/flat.png",
+        "Baguette" : {
+            "description": "A long, thin loaf of French bread with a crispy crust and soft interior.",
+            "img_path": "../images/menu-images/bread/Baguette.png",
             "price":  140,
-            "Ingredients": ["Double Shot Espresso (Ristretto)", "Steamed Milk", "No added water"],
-            "Extended_Description": "A smooth and velvety coffee made with rich espresso and finely steamed milk, creating a creamy texture with a balanced, less foamy finish—perfect for a rich yet mellow coffee experience."
+            "Ingredients": ["Flour", "Water", "Yeast", "Salt"],
+            "Extended_Description": "A classic French bread with a crisp, golden crust and a light, airy interior. Mild in flavor and highly versatile, ideal for sandwiches or pairing with spreads."
         },
-        "Irish Coffee" : {
-            "description": "Coffee with Irish whiskey and cream, smooth and warmly indulgent.",
-            "img_path": "../images/menu-images/hot-beverages/irish-coffee.png",
+        "Muffins" : {
+            "description": "Soft, small baked goods that can be sweet or savory, often with added flavors like chocolate or fruits.",
+            "img_path": "../images/menu-images/bread/Muffins.png",
             "price":  180,
-            "Ingredients": ["Irish Whiskey", "Brown Sugar", "Heavy Cream"],
-            "Extended_Description": "A warm and rich coffee made with freshly brewed coffee, a touch of Irish whiskey, and lightly whipped cream, creating a smooth, slightly sweet drink with a comforting kick."
+            "Ingredients": ["Flour", "Sugar", "Eggs", "Milk", "Butter or oil", "Breaking Powder", "Salt", "Flavorings", "Chocolate chips", "Blueberries"],
+            "Extended_Description": "Soft and moist baked treats with a fluffy texture, often enhanced with fruits, chocolate, or nuts. Light yet satisfying, perfect for breakfast or a quick snack."
         }
     },
 
     "food" : {
-        "Americano" : {
-            "description": "Smooth espresso blended with hot water for a clean, balanced finish.",
-            "img_path": "../images/menu-images/hot-beverages/Americano-coffee.png",
+        "Vegetables Salad" : {
+            "description": "a nutritious mix of fresh or cooked vegetables with dressing, packed with vitamins and balanced flavors.",
+            "img_path": "../images/menu-images/food/Vegetables.png",
+            "price":  99,
+            "Ingredients": ["Drained canned tuna", "Mayonnaise", "Finely chopped celery", "Red onion", "Lemon juice"],
+            "Extended_Description": "A versatile and nutritious dish made from fresh, raw, steamed, or roasted vegetables, usually tossed in vinaigrette or creamy dressing. It often includes lettuce, cucumber, tomatoes, onions, and bell peppers, with additions like carrots, chickpeas, eggs, or cheese. It is rich in vitamins, fiber, and minerals that support overall health and daily energy."
+        },
+        "Tuna Sandwich " : {
+            "description": "creamy and crunchy tuna filling in bread with a light seafood taste.",
+            "img_path": "../images/menu-images/food/Tuna.png",
+            "price":  89,
+            "Ingredients": ["Drained canned tuna", "Mayonnaise", "Finely chopped celery", "Red onion", "Lemon juice"],
+            "Extended_Description": "A classic tuna sandwich consists of canned tuna mixed with mayonnaise, celery, and onion, creating a creamy, crunchy filling served between slices of bread that'll surely bring the taste of the sea."
+        },
+        "Ham n Cheese Sandwich" : {
+            "description": "simple, versatile combo of savory ham and cheese in bread.",
+            "img_path": "../images/menu-images/food/Ham.png",
+            "price":  99,
+            "Ingredients": ["Freshley toast bread slices", "Ham", "American Cheese", "Mayonnaise", "Butter", "Mustart"],
+            "Extended_Description": "classic, versatile meal featuring savory cured ham and melted or cold cheese layered between bread delicately produced for your meat cravings."
+        },
+        "Fish n Chips" : {
+            "description": "crispy fried fish with a salty, classic British flavor.",
+            "img_path": "../images/menu-images/food/Fish.png",
+            "price":  179,
+            "Ingredients": ["Fish Fillets", "Flour based beer beatter", "Thich cut fried potatoes"],
+            "Extended_Description": "classic British dish consisting of white fish—typically cod or haddock—dipped in a savory batter and deep-fried until golden skillfully tailored for your salty taste."
+        },
+        "Baked potato" : {
+            "description": "crispy outside, soft and fluffy inside, mildly sweet and comforting.",
+            "img_path": "../images/menu-images/food/Baked.png",
             "price":  120,
-            "Ingredients": ["Espresso: 2 shots", "Hot Water"],
-            "Extended_Description": "Smooth espresso blended with hot water, creating a clean, balanced cup with a mild yet rich flavor and a subtle aroma—perfect for a simple, no-frills coffee anytime."
-        },
-        "Espresso" : {
-            "description": "Rich, concentrated coffee with a bold flavor and velvety crema.",
-            "img_path": "../images/menu-images/hot-beverages/Espresso-coffee.png",
-            "price":  100,
-            "Ingredients": ["Ground Coffee", "Water"],
-            "Extended_Description": "A bold and concentrated shot of finely brewed coffee, delivering a rich flavor with a strong aroma and a slightly bitter finish—perfect for a quick, intense coffee boost."
-        },
-        "Macchiato" : {
-            "description": "Bold espresso marked with a touch of milk for a refined finish.",
-            "img_path": "../images/menu-images/hot-beverages/Macchiato-coffee.png",
-            "price":  120,
-            "Ingredients": ["Espresso: 1 o 2 shot", "Steamed Milk Foam"],
-            "Extended_Description": "A bold espresso marked with a small amount of steamed milk, creating a rich, strong flavor with a slight creamy touch—perfect for those who want intensity with a hint of smoothness."
-        },
-        "Matcha Latte" : {
-            "description": "Creamy matcha and milk with a soft, earthy, and calming taste.",
-            "img_path": "../images/menu-images/hot-beverages/MatchaLatte-coffee.png",
-            "price":  160,
-            "Ingredients": ["Espresso: 1 o 2 shot", "Steamed Milk Foam"],
-            "Extended_Description": "A bold espresso marked with a small amount of steamed milk, creating a rich, strong flavor with a slight creamy touch—perfect for those who want intensity with a hint of smoothness."
-        },
-        "Flat White" : {
-            "description": " Velvety espresso with steamed milk for a smooth, balanced taste.",
-            "img_path": "../images/menu-images/hot-beverages/flat.png",
-            "price":  140,
-            "Ingredients": ["Double Shot Espresso (Ristretto)", "Steamed Milk", "No added water"],
-            "Extended_Description": "A smooth and velvety coffee made with rich espresso and finely steamed milk, creating a creamy texture with a balanced, less foamy finish—perfect for a rich yet mellow coffee experience."
-        },
-        "Irish Coffee" : {
-            "description": "Coffee with Irish whiskey and cream, smooth and warmly indulgent.",
-            "img_path": "../images/menu-images/hot-beverages/irish-coffee.png",
-            "price":  180,
-            "Ingredients": ["Irish Whiskey", "Brown Sugar", "Heavy Cream"],
-            "Extended_Description": "A warm and rich coffee made with freshly brewed coffee, a touch of Irish whiskey, and lightly whipped cream, creating a smooth, slightly sweet drink with a comforting kick."
+            "Ingredients": ["A whole potato", "Olive oil / Butter", "Sour Cream / Cheddar Cheese", "Bacon bits", "Salt", "Chopped Scall "],
+            "Extended_Description": "a whole, large potato cooked in an oven until the skin is crisp and seasoned, while the interior becomes fluffy, soft, and steaming white a perfect balance of sweetness and dough like texture."
         }
     },
 
@@ -206,9 +199,7 @@
             "description": "Soft layered sponge cake with cream and fresh strawberries for a light dessert experience",
             "img_path": "../images/menu-images/desserts/Strawberry-Shortcake.png",
             "price": 150,
-            "Ingredients": [
-            "All-purpose flour", "Sugar", "Eggs", "Milk", "Butter", "Baking powder", "Vanilla extract", "Fresh strawberries", "Whipped cream (heavy cream + sugar)", "Optional: Powdered sugar"
-            ],
+            "Ingredients": ["All-purpose flour", "Sugar", "Eggs", "Milk", "Butter", "Baking powder", "Vanilla extract", "Fresh strawberries", "Whipped cream (heavy cream + sugar)", "Optional: Powdered sugar"],
             "Extended_Description": "A delightful blend of soft, fluffy cake layered with smooth cream and fresh strawberries, offering a light, sweet flavor with a hint of fruity freshness—perfect for a satisfying treat."
         },
 
@@ -216,9 +207,7 @@
             "description": "Creamy ice cream enhanced with a light salt balance for deeper flavor.",
             "img_path": "../images/menu-images/desserts/Salted-Ice-Cream.png",
             "price": 110,
-            "Ingredients": [
-            "Milk", "Heavy cream", "Sugar", "Egg yolks (optional)", "Vanilla extract", "Salt"
-            ],
+            "Ingredients": ["Milk", "Heavy cream", "Sugar", "Egg yolks (optional)", "Vanilla extract", "Salt"],
             "Extended_Description": "A rich and creamy frozen dessert with smooth vanilla flavor and a subtle hint of salt, delivering a balanced sweet and savory taste with a velvety texture."
         },
 
@@ -226,9 +215,7 @@
             "description": "Buttery tart shell with smooth custard and fresh fruit topping finished with glaze.",
             "img_path": "../images/menu-images/desserts/Tarts.png",
             "price": 130,
-            "Ingredients": [
-            "Fresh strawberries", "All-purpose flour", "Butter", "Sugar", "Egg yolk", "Heavy cream or milk", "Cornstarch", "Vanilla extract", "Apricot jam or glaze"
-            ],
+            "Ingredients": ["Fresh strawberries", "All-purpose flour", "Butter", "Sugar", "Egg yolk", "Heavy cream or milk", "Cornstarch", "Vanilla extract", "Apricot jam or glaze"],
             "Extended_Description": "A crisp buttery crust filled with silky custard and topped with fresh fruits, creating a balance of sweet and slightly tangy flavors—perfect for a light and elegant dessert."
         },
 
@@ -236,9 +223,7 @@
             "description": "Classic silky caramel custard dessert with smooth texture.",
             "img_path": "../images/menu-images/desserts/Pudding.png",
             "price": 90,
-            "Ingredients": [
-            "Eggs", "Sweetened condensed milk", "Evaporated milk", "Sugar (for caramel)", "Vanilla extract"
-            ],
+            "Ingredients": ["Eggs", "Sweetened condensed milk", "Evaporated milk", "Sugar (for caramel)", "Vanilla extract"],
             "Extended_Description": "A smooth and creamy custard topped with a rich, golden caramel glaze, offering a melt-in-your-mouth texture with perfectly balanced sweetness."
         },
 
@@ -246,9 +231,7 @@
             "description": "Crispy golden waffles served warm with syrup and butter.",
             "img_path": "../images/menu-images/desserts/Waffles.png",
             "price": 150,
-            "Ingredients": [
-            "All-purpose flour", "Baking powder", "Sugar", "Salt", "Eggs", "Milk", "Butter (melted)", "Vanilla extract", "Maple syrup"
-            ],
+            "Ingredients": ["All-purpose flour", "Baking powder", "Sugar", "Salt", "Eggs", "Milk", "Butter (melted)", "Vanilla extract", "Maple syrup"],
             "Extended_Description": "Golden, crisp waffles with a soft fluffy center, drizzled with rich maple syrup and topped with melting butter for a warm and comforting bite."
         }
     }

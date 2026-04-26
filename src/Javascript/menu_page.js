@@ -36,111 +36,111 @@ function setupMenuToggle(item) {
 const menu = document.getElementById("menu");
 let previousSelected = "";
 
-fetch('./menu_data.json')
-    .then(res => res.json())
-    .then(data => {
+async function getMenuList() {
+    const response = await fetch('./menu_data.json');
+    const data = await response.json();
 
-        function createMenuCards(type) {
-            if (previousSelected === type) {
-                return;
-            } 
+    function createMenuCards(type) {
+        if (previousSelected === type) {
+            return;
+        } 
 
-            deleteMenuCards();
-            const selected = document.getElementById(type)
+        deleteMenuCards();
+        const selected = document.getElementById(type)
 
-            selected.classList.add('selected');
+        selected.classList.add('selected');
+        
+        if (previousSelected !== "") {
+            const previous = document.getElementById(previousSelected);
+            previous.classList.remove('selected');
+        } 
+
+        previousSelected = type;
+
+        if (!(type in data)) return;
+
+        for(const [item, properties] of Object.entries(data[type])){
+
+            let ingredient_format = ""
+            for (const ingredient of properties.Ingredients) {
+                ingredient_format += `<p>${ingredient}</p>`;
+            }
             
-            if (previousSelected !== "") {
-                const previous = document.getElementById(previousSelected);
-                previous.classList.remove('selected');
-            } 
-
-            previousSelected = type;
-
-            if (!(type in data)) return;
-
-            for(const [item, properties] of Object.entries(data[type])){
-
-                let ingredient_format = ""
-                for (const ingredient of properties.Ingredients) {
-                    ingredient_format += `<p>${ingredient}</p>`
-                }
-                
-                const newContent = 
-                    `
-                    <div class="menu-cards" id=${encodeURIComponent(item)}>
-                        <img src=${properties.img_path} alt="">
-                        <div class="menu-item-info">
-                            <div class="menu-item-title">
-                                <h2>${item}</h2>
-                                <i class="fa-solid fa-circle-info menu-item"></i>
-                            </div>
-                            <p>
-                                ${properties.description}
-                            </p>
-                            
-                            <div class="menu-item-buy">
-                                <p>${properties.price}</p>
-                                <button>
-                                    <span>BUY NOW</span>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                                
-                            </div>
+            const newContent = 
+                `
+                <div class="menu-cards" id=${encodeURIComponent(item)}>
+                    <img src=${properties.img_path} alt="">
+                    <div class="menu-item-info">
+                        <div class="menu-item-title">
+                            <h2>${item}</h2>
+                            <i class="fa-solid fa-circle-info menu-item"></i>
                         </div>
-
+                        <p>
+                            ${properties.description}
+                        </p>
                         
-                        <div class="click_image_info">
-                            <div class="info-container">
-                                <div class="info-contents-c">
-                                    <i class="fa-solid fa-xmark close-info"></i>
-                                    <img src=${properties.img_path} alt="">
-                                    <div class="info-header">
-                                        <h3>${item}</h3>
-                                    </div>
-                                    <div class="info-texts">
-                                        <p>
-                                            ${properties.Extended_Description}
-                                        </p>
-                                    </div>
+                        <div class="menu-item-buy">
+                            <p>₱${properties.price}</p>
+                            <button>
+                                <span>BUY NOW</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                            
+                        </div>
+                    </div>
 
-                                    <div class="info-specs">
-                                        <div class="item-ingredients">
-                                            <div class="ingredients-header">
-                                                <h3>Ingredients</h3>
-                                            </div>
-                                                ${ingredient_format}
+                    
+                    <div class="click_image_info">
+                        <div class="info-container">
+                            <div class="info-contents-c">
+                                <i class="fa-solid fa-xmark close-info"></i>
+                                <img src=${properties.img_path} alt="">
+                                <div class="info-header">
+                                    <h3>${item}</h3>
+                                </div>
+                                <div class="info-texts">
+                                    <p>
+                                        ${properties.Extended_Description}
+                                    </p>
+                                </div>
+
+                                <div class="info-specs">
+                                    <div class="item-ingredients">
+                                        <div class="ingredients-header">
+                                            <h3>Ingredients</h3>
                                         </div>
+                                            ${ingredient_format}
+                                    </div>
 
-                                        <div class="item-kcal">
-                                            <div class="kcal-header">
-                                                <h3>KCAL</h3>
-                                            </div>
+                                    <div class="item-kcal">
+                                        <div class="kcal-header">
+                                            <h3>KCAL</h3>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    `
+                </div>
+                `
                 menu.insertAdjacentHTML('beforeend', newContent);
                 setupMenuToggle(item);
-            }
         }
+    }
 
-        function deleteMenuCards() {
-            menu.innerHTML = ``;
-        }
+    function deleteMenuCards() {
+        menu.innerHTML = ``;
+    }
 
-        createMenuCards('hot_beverage');
+    createMenuCards('hot_beverage');
 
-        const parent = document.querySelector('.sidebar-nav-links');
-        for(const button of parent.children)  {
-            button.addEventListener("click", () => {
-                createMenuCards(button.id);
-            })
-        }
+    const parent = document.querySelector('.sidebar-nav-links');
+    for(const button of parent.children)  {
+        button.addEventListener("click", () => {
+            createMenuCards(button.id);
+        })
+    }
 
-    });
+}
 
-
+getMenuList()
