@@ -139,6 +139,9 @@ header {
     font-size: 8rem;
     line-height: 1.1;
     color: #FDFBD4;
+
+    animation-name: fadeRight;
+    animation-duration: 1s;
 }
 
 .Home-texts > h1 > span {
@@ -151,13 +154,30 @@ header {
     color: #FDFBD4;
     opacity: 0.85;
     line-height: 1.6;
+
+    animation: fadeRight 0.8s ease-out forwards;
 }
+
+@keyframes fadeRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 
 .Home-buttons {
     display: flex;
     gap: 12px;
     margin-top: 25px;
+
+    animation-name: fadeRight;
+    animation-duration: 1s;
 }
 
 .Home-buttons > a {
@@ -242,7 +262,18 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%; 
 }
+
+
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 
 .featured-card > .item-box {
     display: flex;
@@ -392,6 +423,10 @@ header {
     padding: 2rem;
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%; 
 }
 
 .about-contents .about-left {

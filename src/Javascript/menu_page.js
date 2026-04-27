@@ -33,7 +33,7 @@ function setupMenuToggle(item) {
 
 
 
-const menu = document.getElementById("menu");
+let menu = document.getElementById("menu");
 let previousSelected = "";
 
 async function getMenuList() {
@@ -79,11 +79,18 @@ async function getMenuList() {
                             ${properties.description}
                         </p>
                         
-                        <div class="menu-item-buy">
+                        <div class="menu-item-price">
                             <p>₱${properties.price}</p>
+                        </div>
+                        <div class="menu-item-buy">
                             <button>
                                 <span>BUY NOW</span>
                                 <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                            <button> 
+                                <span>Add to Cart</span>
+                                <i class="fa-solid fa-cart-arrow-down"></i>
                             </button>
                             
                         </div>
@@ -129,7 +136,15 @@ async function getMenuList() {
     }
 
     function deleteMenuCards() {
-        menu.innerHTML = ``;
+        menu.remove();
+
+        menu = document.createElement('div');
+        menu.id = 'menu';
+        menu.classList.add('menu-items');
+        const container = document.querySelector('.left-menu-contents');
+        container.appendChild(menu);
+
+        void menu.offsetWidth;
     }
 
     createMenuCards('hot_beverage');
