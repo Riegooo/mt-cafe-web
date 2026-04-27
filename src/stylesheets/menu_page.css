@@ -152,6 +152,7 @@ body {
     background-color: #FDFBD4;
     border: 1px solid #2A1F1B;
     max-width: 1500px;
+    width: 85%;
     margin: auto;
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -199,14 +200,14 @@ body {
 
 .menu-cards > .menu-item-info {
     padding: 1rem;
-
     background-color: #2A1F1B;
     border-radius: 5px;
-
-    transition: all ease 0.3s;
-
     border-top-left-radius: 20px;
     max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
 }
 
 .menu-item-info:hover {
@@ -407,17 +408,22 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    margin-top: 1rem;
     align-items: center;
+
+    margin-top: auto; 
 }
 
 .menu-item-info > .menu-item-price {
     margin-top: 10px;
 }
 
-.menu-item-info > .menu-item-price > p {
+.menu-item-info > .menu-item-price > .price {
     color: #DCB66F;
     font-weight: 800;
+
+    font-size: 1.20rem;
+
+    margin-bottom: 1rem;
 }
 
 .menu-item-buy > button {
@@ -438,8 +444,12 @@ body {
 
 
 @media only screen and (max-width: 1500px) {
-    .menu-item-info > .menu-item-title > a > h2 {
-        font-size: 1.20rem;
+    .menu-cards > .menu-item-info > .menu-item-title > h2 {
+        font-size: 1.10rem;    
+    }
+
+    .menu-cards > .menu-item-info > .menu-item-title > i {
+        font-size: 0.70rem;    
     }
 
     .menu-item-info > p {
@@ -525,6 +535,15 @@ body {
     .header-text > a > h1 {
         font-size: 1.20rem;
     }
+
+    .menu-cards > .menu-item-info > .menu-item-title > h2 {
+        font-size: 1.30rem;    
+    }
+
+    .menu-cards > .menu-item-info > .menu-item-title > i {
+        font-size: 0.70rem;
+    }
+
 
 }
 

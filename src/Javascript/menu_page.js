@@ -80,7 +80,7 @@ async function getMenuList() {
                         </p>
                         
                         <div class="menu-item-price">
-                            <p>₱${properties.price}</p>
+                            <p class="price">₱${properties.price}</p>
                         </div>
                         <div class="menu-item-buy">
                             <button>
