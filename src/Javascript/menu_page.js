@@ -17,7 +17,7 @@ menuTog.addEventListener("click", () => {
 function setupMenuToggle(item) {
     const menu_card = document.getElementById(encodeURIComponent(item));
 
-    const btn = menu_card.querySelector('.menu-item-title')
+    const btn = menu_card.querySelector('.menu-item-price')
     const content = menu_card.querySelector('.click_image_info');
     const xbutton = menu_card.querySelector('.fa-solid.fa-xmark.close-info');
 
@@ -73,7 +73,6 @@ async function getMenuList() {
                     <div class="menu-item-info">
                         <div class="menu-item-title">
                             <h2>${item}</h2>
-                            <i class="fa-solid fa-circle-info menu-item"></i>
                         </div>
                         <p>
                             ${properties.description}
@@ -81,6 +80,7 @@ async function getMenuList() {
                         
                         <div class="menu-item-price">
                             <p class="price">₱${properties.price}</p>
+                            <i class="fa-solid fa-circle-info menu-item"></i>
                         </div>
                         <div class="menu-item-buy">
                             <button>
@@ -89,7 +89,7 @@ async function getMenuList() {
                             </button>
 
                             <button> 
-                                <span>Add to Cart</span>
+                                <span>ADD TO CART</span>
                                 <i class="fa-solid fa-cart-arrow-down"></i>
                             </button>
                             

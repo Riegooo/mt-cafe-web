@@ -140,8 +140,7 @@ header {
     line-height: 1.1;
     color: #FDFBD4;
 
-    animation-name: fadeRight;
-    animation-duration: 1s;
+    animation: fadeRight 0.9s ease-out forwards;
 }
 
 .Home-texts > h1 > span {
@@ -155,7 +154,7 @@ header {
     opacity: 0.85;
     line-height: 1.6;
 
-    animation: fadeRight 0.8s ease-out forwards;
+    animation: fadeRight 0.9s ease-out forwards;
 }
 
 @keyframes fadeRight {
@@ -176,8 +175,7 @@ header {
     gap: 12px;
     margin-top: 25px;
 
-    animation-name: fadeRight;
-    animation-duration: 1s;
+    animation: fadeRight 0.9s ease-out forwards;
 }
 
 .Home-buttons > a {
