@@ -158,12 +158,15 @@ body {
     padding: 1rem;
 
     transition: all ease 0.3s;
-
     border-radius: 10px;
 
     animation-name: fadeRight;
     animation-duration: 0.8s;
+
     height: 100%;
+
+    display: flex;              
+    flex-direction: column;  
 
     justify-items: center;
 }
@@ -202,11 +205,14 @@ body {
     background-color: #2A1F1B;
     border-radius: 5px;
     border-top-left-radius: 20px;
-    max-width: 100%;
 
     display: flex;
     flex-direction: column;
-    min-height: 250px;
+
+    height: 100%;            
+
+    width: 100%;
+    max-width: 400px;
 }
 
 .menu-item-info:hover {
@@ -385,6 +391,8 @@ body {
 .menu-item-info > p {
     color: #dcb66f96;
     font-size: 0.90rem;
+
+    flex-grow: 1;            
 }
 
 .menu-item-info > .menu-item-buy {
@@ -392,14 +400,12 @@ body {
     grid-template-columns: 1fr;
     gap: 1rem;
     align-items: center;
-
-    margin-top: auto; 
 }
 
 .menu-item-info > .menu-item-price {
-    margin-top: 10px;
-    margin-bottom: 1rem;
+    margin-top: auto;          
 
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
