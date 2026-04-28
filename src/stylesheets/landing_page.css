@@ -412,6 +412,10 @@ header {
 
     font-weight: 900;
     font-size: 5rem;
+
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%; 
 }
 
 .about-main-content > .about-contents {
@@ -526,6 +530,9 @@ header {
 
 .whychooseus-main-content > .whychooseus-header > h1  {
     color: #2A1F1B;
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%; 
 }
 
 .whychooseus-main-content > .whychoose-contents {
@@ -533,6 +540,10 @@ header {
     grid-template-columns: 1fr 0.7fr;
     padding: 10px;
     gap: 10px;
+
+    animation: fade-in linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%; 
 }
 
 .whychoose-contents > .whychoose-right {
