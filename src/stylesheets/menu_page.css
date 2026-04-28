@@ -30,6 +30,8 @@ body {
     top: 0;
     left: 0;
     right: 0;
+
+
 } 
 
 .side-bar > .sidebar-header {
@@ -73,6 +75,7 @@ body {
 
 .sidebar-nav-links > button > i  {
     font-size: 1.20rem;
+    color: #cca55b;
 }
 
 .sidebar-nav-links > .selected {
@@ -493,6 +496,32 @@ body {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
+    .main-container > .side-bar {
+        width: 160px;
+        height: 100vh;
+
+        background-color: #2A1F1B;
+
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+    } 
+
+    .main-container > .side-bar > .sidebar-nav-links > button {
+        display: block;
+    }
+
+    
+    .sidebar-nav-links > button > h1 {
+        font-size: 1rem;
+    }
+
+    .sidebar-header > h1 {
+        color: #DCB66F;
+        font-size: 1.20rem;
+    }
 }
 
 @media only screen and (max-width: 800px){
@@ -565,6 +594,10 @@ body {
         font-size: 0.70rem;
     }
 
+    .sidebar-header > h1 {
+        color: #DCB66F;
+        font-size: 2rem;
+    }
 
 }
 
