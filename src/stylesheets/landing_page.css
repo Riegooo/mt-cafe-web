@@ -1354,8 +1354,8 @@ footer > .footer-main-content {
         padding: 10px 10px;
     }
 
-        .featured-header > h1,
-        .about-header > h1, .contact-header > h1  {
+    .featured-header > h1,
+    .about-header > h1, .contact-header > h1  {
         font-size: 2rem;
     }
 }
