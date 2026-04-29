@@ -30,14 +30,14 @@
         },
         "Flat White" : {
             "description": "Velvety espresso with finely textured milk.",
-            "img_path": "../images/menu-images/hot-beverages/flat2.png",
+            "img_path": "../images/menu-images/hot-beverages/Flat2.png",
             "price":  140,
             "Ingredients": ["Double Shot Espresso (Ristretto)", "Steamed Milk", "No added water"],
             "Extended_Description": "A smooth and velvety coffee made with rich espresso and finely steamed milk, creating a creamy texture with a balanced, less foamy finish—perfect for a rich yet mellow coffee experience."
-        },
+        },  
         "Irish Coffee" : {
             "description": "Coffee blended with cream and a hint of sweetness.",
-            "img_path": "../images/menu-images/hot-beverages/irish-coffee2.png",
+            "img_path": "../images/menu-images/hot-beverages/Irish-coffee2.png",
             "price":  180,
             "Ingredients": ["Irish Whiskey", "Brown Sugar", "Heavy Cream"],
             "Extended_Description": "A warm and rich coffee made with freshly brewed coffee, a touch of Irish whiskey, and lightly whipped cream, creating a smooth, slightly sweet drink with a comforting kick."
