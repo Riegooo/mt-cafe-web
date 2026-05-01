@@ -105,8 +105,20 @@ body {
     font-size: 1.50rem;
     text-decoration: none;
 
-    background-color: #FDFBD4;
+    background-color: #DCB66F;
+    box-shadow: 0 5px #FDFBD4;
     border-radius: 5px;
+
+    transition: all ease 0.2s;
+}
+
+.cart-button > a:hover {
+    transform: translateY(2px);
+    box-shadow: 0 2px #FDFBD4;
+}
+
+.cart-button > a:active {
+    opacity: 0.7;
 }
 
 .cart-button > a > span {

@@ -64,6 +64,7 @@ if (total_display) {
     total_display.innerHTML = `${total}`;
 }
 
+const total_cart_container = document.getElementById('total_price_cart');
 
 
 
@@ -202,7 +203,7 @@ function menuCardButtons(item, properties) {
             localStorage.setItem("total", total);
     
             if (total_display) {
-                total_display.innerHTML = `${total}`;
+                total_display.innerHTML = `BUY : ${total}`;
             }
     
             console.log("UPDATED:", total);
@@ -266,7 +267,7 @@ function addToCartPage() {
     }
 
     container.innerHTML = "";
-
+    let price_total_compute = 0;
     orders.forEach(item => {
         container.innerHTML += `
             <div class="cart-item">
@@ -277,7 +278,10 @@ function addToCartPage() {
             </div>
             <hr>
         `;
+        price_total_compute += item.price * item.qty;
     });
+
+    total_cart_container.innerHTML = `Total Cart : ${price_total_compute}`;
 }
 
 
