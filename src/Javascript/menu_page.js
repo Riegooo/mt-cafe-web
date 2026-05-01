@@ -65,7 +65,7 @@ if (total_display) {
 }
 
 const total_cart_container = document.getElementById('total_price_cart');
-
+let price_total_compute = 0;
 
 
 async function getMenuList() {
@@ -267,7 +267,7 @@ function addToCartPage() {
     }
 
     container.innerHTML = "";
-    let price_total_compute = 0;
+    
     orders.forEach(item => {
         container.innerHTML += `
             <div class="cart-item">
@@ -281,7 +281,7 @@ function addToCartPage() {
         price_total_compute += item.price * item.qty;
     });
 
-    total_cart_container.innerHTML = `Total Cart : ${price_total_compute}`;
+    total_cart_container.innerHTML = `Total Price Cart : ${price_total_compute}`;
 }
 
 
