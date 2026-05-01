@@ -14,6 +14,10 @@ menuTog.addEventListener("click", () => {
     }
 });
 
+
+
+
+
 function setupMenuToggle(item) {
     const menu_card = document.getElementById(encodeURIComponent(item));
 
@@ -88,7 +92,7 @@ async function getMenuList() {
                                 <i class="fa-solid fa-arrow-right"></i>
                             </button>
 
-                            <button> 
+                            <button onclick="addtocart()"> 
                                 <span>ADD TO CART</span>
                                 <i class="fa-solid fa-cart-arrow-down"></i>
                             </button>
@@ -159,3 +163,29 @@ async function getMenuList() {
 }
 
 getMenuList()
+
+
+
+// addtocart function
+
+let i = 0;
+let isWaiting = false;
+const cooldown = 3000;
+const cart_count = document.getElementById('cart_count');
+
+function addtocart() {
+
+    if (isWaiting) return; 
+
+    cart_count.innerHTML = `${i}`;
+    i++;
+
+    isWaiting = true;
+
+    setTimeout(() => {
+        isWaiting = false;
+    }, cooldown);
+
+}
+
+addtocart();

@@ -88,6 +88,54 @@ body {
     color: #2A1F1B;
 }
 
+
+.side-bar > .cart-button {
+    padding: 1rem;
+    margin-top: 1rem;
+
+    border-top: 1px solid #DCB66F;
+}
+
+.cart-button > a {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    font-size: 1.50rem;
+    text-decoration: none;
+
+    background-color: #FDFBD4;
+    border-radius: 5px;
+}
+
+.cart-button > a > span {
+    color: #2A1F1B;
+    font-weight: 700;
+}
+
+.cart-button > a > i {
+    color: #2A1F1B;
+}
+
+
+.cart-button > .cart_counter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.cart_counter > h2 {
+    color: #FDFBD4;
+}
+
+.cart_counter > h3 {
+    color: #DCB66F;
+}
+
+
+
 .left-contents > .header {
     background-image: url(../images/Home-Sect-Bg.png);
     background-position: center;
