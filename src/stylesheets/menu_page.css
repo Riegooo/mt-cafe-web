@@ -119,23 +119,6 @@ body {
 }
 
 
-.cart-button > .cart_counter {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.cart_counter > h2 {
-    color: #FDFBD4;
-}
-
-.cart_counter > h3 {
-    color: #DCB66F;
-}
-
-
-
 .left-contents > .header {
     background-image: url(../images/Home-Sect-Bg.png);
     background-position: center;
