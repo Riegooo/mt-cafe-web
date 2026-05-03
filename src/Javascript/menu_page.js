@@ -57,7 +57,7 @@ let previousSelected = "";
 let orders = JSON.parse(localStorage.getItem("orders")) || [];
 let total = parseInt(localStorage.getItem("total")) || 0;
 
-const container = document.getElementById('container');
+const container = document.getElementById('cartuser_display');
 const total_display = document.getElementById("total");
 
 if (total_display) {
@@ -227,7 +227,8 @@ function menuCardButtons(item, properties) {
                 orders.push({
                     name: item,
                     price: properties.price,
-                    qty: 1
+                    qty: 1,
+                    item_img: `${properties.img_path}`
                 });
             }
     
@@ -236,6 +237,8 @@ function menuCardButtons(item, properties) {
             alert("Item added successfully");
             console.log("Added:", item);
         });
+
+        
     }
 }
 
@@ -279,19 +282,33 @@ function addToCartPage() {
     orders.forEach((item, index) => {
         cart_card += `
             <div class="cart-item" data-index="${index}">
-                <p>Item name: ${item.name}</p>
-                <p>Item price: ${item.price}</p>
-                <p>Item Quantity: ${item.qty}</p>
-                <p>Total Price: ${item.price * item.qty}</p>
-                <button class="delete_cart">Delete Cart</button>
+                <img src=${item.item_img} alt="">
+
+                <div class="cart-item-info">
+                    <h2> ${item.name}</h2>
+                    <p>₱${item.price}</p>
+                </div>
+
+                <div class="cart-item-prices">
+                    <div class="quantity"> 
+                        <h2>Quantity: </h2>
+                        <p>${item.qty}</p>
+                    </div>
+
+                    <p>Total Price: <span>₱${item.price * item.qty}</span></p>
+                </div>
+
+                <button class="delete_cart">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
             </div>
-            <hr>
         `;
         price_total_compute += item.price * item.qty;
     });
 
 
     container.innerHTML = cart_card;
+
     const deleteButtons = container.querySelectorAll(".delete_cart");
 
     deleteButtons.forEach((btn, index) => {
@@ -305,9 +322,43 @@ function addToCartPage() {
     });
 
 
-    console.log("total price current" + price_total_compute);
-    
-    total_cart_container.innerHTML = `${price_total_compute}`;
+    console.log("total price current: " + price_total_compute);
+
+    let cart_order_summary = ""
+
+    const cart_order = document.getElementById('cart_card');
+    cart_order_summary = `
+            <h2>ORDER SUMMARY</h2>
+
+            <div class="order_header">
+                <h3>Item Name</h3>
+                <h3>Quantity</h3>
+                <h3>Sub total</h3>
+            </div>
+
+            <div class="orders_list">
+                ${orders.map(item => `
+                    <p>${item.name}</p>
+                    <P>${item.qty}</p>
+                    <P>₱${item.price * item.qty}</p>
+                `).join("")}
+            </div>
+
+            <div class="total_price">
+                <h3>Total: </h3>
+                <h3>₱${price_total_compute}</h3>
+            </div>
+
+            <div class="checkout_button">
+                <button>
+                    <span>Proceed to Checkout</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <button>Checkout with Gcash</button>
+            </div>
+        `;
+
+    cart_order.innerHTML = cart_order_summary;
 }
 
 

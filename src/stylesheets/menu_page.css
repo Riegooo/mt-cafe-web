@@ -495,8 +495,12 @@ body {
 
 .menu-item-buy > button:hover {
     transform: translateY(-2px);
+    background-color: #ca9e4c;
 }
 
+.menu-item-buy > button:active {
+    opacity: 0.7;
+}
 
 
 
