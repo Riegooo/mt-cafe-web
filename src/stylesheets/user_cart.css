@@ -185,9 +185,8 @@ header > nav > a {
     border: none;
 
     font-size: 1.30rem;
-    color: #FDFBD4;
+    color: #fdfbd4a3;
 
-    background-color: #2a1f1bc4;
     padding: 1rem;
 
     width: 40%;
@@ -199,7 +198,7 @@ header > nav > a {
 }
 
 .cart-item > button:hover {
-    background-color: #2A1F1B;
+    color: #FDFBD4;
 }
 
 .cart-item > button:active {
@@ -257,7 +256,8 @@ header > nav > a {
 #cart_card > .checkout_button {
     padding: 1rem;
 }
-.checkout_button > button {
+
+.checkout_button > .c_btn_one {
     margin-bottom: 1rem;
     
     padding: 1rem 0.75rem;
@@ -273,7 +273,30 @@ header > nav > a {
     align-items: center;
     justify-content: center;
     gap: 5px;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+.checkout_button > .c_btn_two {
+    margin-bottom: 1rem;
+    
+    padding: 1rem 0.75rem;
+    width: 100%;
+
+    background-color: #FDFBD4;
+    color: #2A1F1B;
+
+    border: none;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 
 
 

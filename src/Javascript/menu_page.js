@@ -272,6 +272,8 @@ function addToCartPage() {
         return;
     }
 
+    price_total_compute = 0;
+
     if (orders.length === 0) {
         container.innerHTML = `<p>You don't have any items in the cart.</p>`;
         return;
@@ -303,7 +305,7 @@ function addToCartPage() {
                 </button>
             </div>
         `;
-        price_total_compute += item.price * item.qty;
+        price_total_compute += Number(item.price) * item.qty;
     });
 
 
@@ -316,7 +318,7 @@ function addToCartPage() {
 
             orders.splice(index, 1);
             localStorage.setItem("orders", JSON.stringify(orders));
-
+            
             addToCartPage();
         });
     });
@@ -350,11 +352,11 @@ function addToCartPage() {
             </div>
 
             <div class="checkout_button">
-                <button>
+                <button class="c_btn_one">
                     <span>Proceed to Checkout</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
-                <button>Checkout with Gcash</button>
+                <button class="c_btn_two">Checkout with Gcash</button>
             </div>
         `;
 
