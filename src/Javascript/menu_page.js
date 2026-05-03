@@ -68,6 +68,9 @@ const total_cart_container = document.getElementById('total_price_cart');
 let price_total_compute = 0;
 
 
+
+
+
 async function getMenuList() {
 
     if (!menu) return;
@@ -187,6 +190,7 @@ async function getMenuList() {
 
 
 
+
 function menuCardButtons(item, properties) {
 
     const card = document.getElementById(encodeURIComponent(item));
@@ -236,6 +240,10 @@ function menuCardButtons(item, properties) {
 }
 
 
+
+
+
+
 function deleteMenuCards() {
     if (!menu) return;
 
@@ -262,26 +270,44 @@ function addToCartPage() {
     }
 
     if (orders.length === 0) {
-        container.innerHTML = `<p>Test</p>`;
+        container.innerHTML = `<p>You don't have any items in the cart.</p>`;
         return;
     }
 
-    container.innerHTML = "";
-    
-    orders.forEach(item => {
-        container.innerHTML += `
-            <div class="cart-item">
+    let cart_card = "";
+
+    orders.forEach((item, index) => {
+        cart_card += `
+            <div class="cart-item" data-index="${index}">
                 <p>Item name: ${item.name}</p>
                 <p>Item price: ${item.price}</p>
                 <p>Item Quantity: ${item.qty}</p>
                 <p>Total Price: ${item.price * item.qty}</p>
+                <button class="delete_cart">Delete Cart</button>
             </div>
             <hr>
         `;
         price_total_compute += item.price * item.qty;
     });
 
-    total_cart_container.innerHTML = `Total Price Cart : ${price_total_compute}`;
+
+    container.innerHTML = cart_card;
+    const deleteButtons = container.querySelectorAll(".delete_cart");
+
+    deleteButtons.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+
+            orders.splice(index, 1);
+            localStorage.setItem("orders", JSON.stringify(orders));
+
+            addToCartPage();
+        });
+    });
+
+
+    console.log("total price current" + price_total_compute);
+    
+    total_cart_container.innerHTML = `${price_total_compute}`;
 }
 
 
