@@ -225,6 +225,7 @@
         <div class="contact-main-content">
             <div class="contact-header">
                 <h1>Contact Us</h1>
+                <p>Have questions? We'd love to hear from you.</p>
             </div>
             <div class="contact-contents">
                 <div class="contact-left">
@@ -241,10 +242,10 @@
 
                     <div class="contact-inputs">
                         <form action="">
-                            <input type="text" placeholder="your Name" required><br>
-                            <input type="email" placeholder="your Email" required><br>
+                            <input type="text" placeholder="your Name" id="name" required><br>
+                            <input type="email" placeholder="your Email" id="email" required><br>
                             <textarea name="message" id="message" rows="4" cols="50" placeholder="Your message"></textarea><br>
-                            <button>Send a Message</button>
+                            <button onclick="submitForm()">Send a Message</button>
                         </form>
                     </div>
                 </div>

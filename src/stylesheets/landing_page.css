@@ -656,6 +656,8 @@ header {
     border-radius: 10px;
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    margin-top: 1rem;
 }
 
 .contact-contents > .contact-left {
@@ -1108,7 +1110,7 @@ footer > .footer-main-content {
         font-size: 0.95rem;
     }
 
-    .about-main-content {
+    .about-container > .about-main-content {
         padding: 2rem;
     }
 
@@ -1120,6 +1122,10 @@ footer > .footer-main-content {
     .whychoose-contents > .whychoose-right {
         justify-content: center; 
         align-items: center;   
+    }
+
+    .contact-container > .contact-main-content {
+        padding: 2rem;
     }
 
     .contact-main-content > .contact-contents {
