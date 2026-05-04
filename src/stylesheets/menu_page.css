@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
 
+:root {
+    --essential-cream: #DCB66F;
+    --cream: #FDFBD4; 
+    --dark-brown-coffe: #2A1F1B;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +17,7 @@
 body {
     min-height: 100vh;
     overflow: hidden;
-    background-color: #DCB66F;
+    background-color: var(--essential-cream);
 }
 
 .main-container {
@@ -24,7 +30,7 @@ body {
     width: 280px;
     height: 100vh;
 
-    background-color: #2A1F1B;
+    background-color: var(--dark-brown-coffe);
 
     position: sticky;
     top: 0;
@@ -36,11 +42,11 @@ body {
 
 .side-bar > .sidebar-header {
     padding: 2rem;
-    border-bottom: 2px solid #DCB66F;
+    border-bottom: 2px solid var(--essential-cream);
     text-align: center;
 }
 .sidebar-header > h1 {
-    color: #DCB66F;
+    color: var(--essential-cream);
     font-size: 2rem;
 }
 
@@ -58,7 +64,7 @@ body {
     margin-top: 1rem;
     padding: 10px 2rem;
 
-    color: #FDFBD4;
+    color: var(--cream);
     text-align: center;
 
     transition: all ease 0.2s;
@@ -79,13 +85,13 @@ body {
 }
 
 .sidebar-nav-links > .selected {
-    background-color: #DCB66F;
-    color: #2A1F1B;
+    background-color: var(--essential-cream);
+    color: var(--dark-brown-coffe);
 }
 
 .sidebar-nav-links > button:hover {
-    background-color: #DCB66F;
-    color: #2A1F1B;
+    background-color: var(--essential-cream);
+    color: var(--dark-brown-coffe);
 }
 
 
@@ -93,7 +99,7 @@ body {
     padding: 1rem;
     margin-top: 1rem;
 
-    border-top: 1px solid #DCB66F;
+    border-top: 1px solid var(--essential-cream);
 }
 
 .cart-button > a {
@@ -105,8 +111,8 @@ body {
     font-size: 1.50rem;
     text-decoration: none;
 
-    background-color: #DCB66F;
-    box-shadow: 0 5px #FDFBD4;
+    background-color: var(--essential-cream);
+    box-shadow: 0 5px var(--cream);
     border-radius: 5px;
 
     transition: all ease 0.2s;
@@ -114,7 +120,7 @@ body {
 
 .cart-button > a:hover {
     transform: translateY(2px);
-    box-shadow: 0 2px #FDFBD4;
+    box-shadow: 0 2px var(--cream);
 }
 
 .cart-button > a:active {
@@ -122,12 +128,12 @@ body {
 }
 
 .cart-button > a > span {
-    color: #2A1F1B;
+    color: var(--dark-brown-coffe);
     font-weight: 700;
 }
 
 .cart-button > a > i {
-    color: #2A1F1B;
+    color: var(--dark-brown-coffe);
 }
 
 
@@ -169,7 +175,7 @@ body {
 }
 
 .header-text > a > h1 {
-    color: #DCB66F;
+    color: var(--essential-cream);
 }
 
 
@@ -177,7 +183,7 @@ body {
     height: calc(100vh - 120px); 
     overflow-y: auto; 
     padding: 2rem;
-    scrollbar-color: #DCB66F #2A1F1B;
+    scrollbar-color: var(--essential-cream) var(--dark-brown-coffe);
 }
 
 
@@ -194,8 +200,8 @@ body {
 
 
 .menu-items > .menu-cards {
-    background-color: #FDFBD4;
-    border: 1px solid #2A1F1B;
+    background-color: var(--cream);
+    border: 1px solid var(--dark-brown-coffe);
     max-width: 1500px;
     width: 85%;
     margin: auto;
@@ -248,7 +254,7 @@ body {
 
 .menu-cards > .menu-item-info {
     padding: 1rem;
-    background-color: #2A1F1B;
+    background-color: var(--dark-brown-coffe);
     border-radius: 5px;
     border-top-left-radius: 20px;
 
@@ -318,21 +324,21 @@ body {
     padding: 30px;
     border-radius: 10px;
 
-    background-color: #FDFBD4;
+    background-color: var(--cream);
 
     height: 100vh;
     overflow-y: auto;
 }
 
 .info-container > .info-contents-c > i {
-    background-color: #DCB66F;
+    background-color: var(--essential-cream);
     padding: 10px;
     border-radius: 5px;
-    color: #2A1F1B;
+    color: var(--dark-brown-coffe);
     font-weight: 800;
 
 
-    box-shadow: 0 5px #2A1F1B;
+    box-shadow: 0 5px var(--dark-brown-coffe);
 
     transition: all ease 0.2s;
 
@@ -342,7 +348,7 @@ body {
 .info-container > .info-contents-c > i:hover {
     background-color: #cca55b;
     transform: translateY(2px);
-    box-shadow: 0 2px #2A1F1B;
+    box-shadow: 0 2px var(--dark-brown-coffe);
 }
 
 .info-container > .info-contents-c > i:active {
@@ -375,7 +381,7 @@ body {
     font-style: normal;
 
     font-weight: 800;
-    color: #2A1F1B;
+    color: var(--dark-brown-coffe);
 }
 
 .info-contents-c > .info-texts { 
@@ -394,7 +400,7 @@ body {
 }
 
 .info-specs > .item-ingredients > .ingredients-header > h3 {
-    color: #2A1F1B;
+    color: var(--dark-brown-coffe);
     text-decoration: underline;
 }
 
@@ -405,7 +411,7 @@ body {
 
 
 .info-specs > .item-kcal > .kcal-header > h3 {
-    color: #2A1F1B;
+    color: var(--dark-brown-coffe);
     text-decoration: underline;
 }
 
@@ -419,19 +425,19 @@ body {
 
 
 .menu-item-info > .menu-item-title{
-    color: #FDFBD4;
+    color: var(--cream);
 
     margin-bottom: 1rem;
     cursor: pointer;
     text-align: center;
 
-    border-bottom: 1px solid #FDFBD4;
+    border-bottom: 1px solid var(--cream);
     padding: 1rem 0rem;
 
 }
 
 .menu-item-info > .menu-item-title > h2 {
-    color: #FDFBD4;
+    color: var(--cream);
 }
 
 .menu-item-info > p {
@@ -464,7 +470,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all ease 0.2s;
 
-    color: #FDFBD4;
+    color: var(--cream);
 }
 
 .menu-item-info > .menu-item-price > i:hover {
@@ -477,7 +483,7 @@ body {
 }
 
 .menu-item-info > .menu-item-price > .price {
-    color: #DCB66F;
+    color: var(--essential-cream);
     font-weight: 800;
 
     font-size: 1.20rem;
@@ -486,9 +492,9 @@ body {
 .menu-item-buy > button {
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #DCB66F;
-    background-color: #DCB66F;
-    color: #2A1F1B;
+    border: 1px solid var(--essential-cream);
+    background-color: var(--essential-cream);
+    color: var(--dark-brown-coffe);
     font-weight: 700;
     transition: all ease 0.3s;
 }
@@ -518,7 +524,7 @@ body {
     }
 
     .menu-item-buy > p {
-        color: #DCB66F;
+        color: var(--essential-cream);
         font-weight: 800;
         font-size: 0.90rem;
     }
@@ -548,7 +554,7 @@ body {
         width: 160px;
         height: 100vh;
 
-        background-color: #2A1F1B;
+        background-color: var(--dark-brown-coffe);
 
         position: sticky;
         top: 0;
@@ -566,7 +572,7 @@ body {
     }
 
     .sidebar-header > h1 {
-        color: #DCB66F;
+        color: var(--essential-cream);
         font-size: 1.20rem;
     }
 }
@@ -611,7 +617,7 @@ body {
 
     .main-container .side-bar.active > .sidebar-header {
         padding: 0rem;
-        border-bottom: 2px solid #DCB66F;
+        border-bottom: 2px solid var(--essential-cream);
         text-align: center;
     }
 
@@ -642,7 +648,7 @@ body {
     }
 
     .sidebar-header > h1 {
-        color: #DCB66F;
+        color: var(--essential-cream);
         font-size: 2rem;
     }
 
@@ -653,7 +659,7 @@ body {
         height: calc(100vh - 120px); 
         overflow-y: auto; 
         padding: 2rem 0rem;
-        scrollbar-color: #DCB66F #2A1F1B;
+        scrollbar-color: var(--essential-cream) var(--dark-brown-coffe);
     }
 }
 

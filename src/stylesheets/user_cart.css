@@ -1,3 +1,8 @@
+:root {
+    --essential-cream: #DCB66F;
+    --cream: #FDFBD4; 
+    --dark-brown-coffe: #2A1F1B;
+}
 
 * {
     margin: 0;
@@ -43,14 +48,14 @@ header > nav > .logo {
 }
 
 .logo > h1 {
-    color: #FDFBD4;
+    color: var(--cream);
     font-size: 1.5rem;
 }
 
 header > nav > a {
     text-decoration: none;
-    color: #2A1F1B;
-    background-color: #DCB66F;
+    color: var(--dark-brown-coffe);
+    background-color: var(--essential-cream);
     padding: 1rem;
     border-radius: 5px;
     font-weight: 700;
@@ -62,7 +67,7 @@ header > nav > a {
 
 .main-container {
     padding: 5rem;
-    background-color: #2A1F1B;
+    background-color: var(--dark-brown-coffe);
 }
 
 .main-container > .cart-header {
@@ -73,12 +78,12 @@ header > nav > a {
     font-size: 2.50rem;
     margin-bottom: 1rem;
     
-    color: #FDFBD4;
+    color: var(--cream);
 }
 
 
 .cart-header > p {
-    color: #DCB66F;
+    color: var(--essential-cream);
 }
 
 .main-container > .cart-contents {
@@ -91,7 +96,7 @@ header > nav > a {
     grid-template-columns: 1fr 0.5fr;
     padding: 1rem;
     
-    background-color: #FDFBD4;
+    background-color: var(--cream);
 
     border-radius: 5px;
     gap: 1rem;
@@ -121,8 +126,8 @@ header > nav > a {
 
     gap: 10px;
 
-    background-color: #2A1F1B;
-    border: 1px solid #2A1F1B;
+    background-color: var(--dark-brown-coffe);
+    border: 1px solid var(--dark-brown-coffe);
     margin-bottom: 1rem;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -143,11 +148,11 @@ header > nav > a {
 
 .cart-item-info > h2 {
     margin-bottom: 0.80rem;
-    color: #DCB66F;
+    color: var(--essential-cream);
 }
 
 .cart-item-info > p {
-    color: #FDFBD4;
+    color: var(--cream);
 
 }
 
@@ -163,21 +168,21 @@ header > nav > a {
 }
 
 .quantity > h2 {
-    color: #DCB66F;
+    color: var(--essential-cream);
     font-weight: 500;
 }
 
 .quantity > p {
-    color: #FDFBD4;
+    color: var(--cream);
     font-weight: 800;
 }
 
 .cart-item-prices > p {
-    color: #DCB66F;
+    color: var(--essential-cream);
 }
 
 .cart-item-prices > p > span {
-    color: #FDFBD4;
+    color: var(--cream);
 }
 
 .cart-item > button {
@@ -198,7 +203,7 @@ header > nav > a {
 }
 
 .cart-item > button:hover {
-    color: #FDFBD4;
+    color: var(--cream);
 }
 
 .cart-item > button:active {
@@ -208,7 +213,7 @@ header > nav > a {
 
 .cart-display > #cart_card {
     padding: 1rem;
-    background-color: #DCB66F;
+    background-color: var(--essential-cream);
     border-radius: 5px;
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -232,7 +237,7 @@ header > nav > a {
 
     padding: 1rem;
 
-    border-top: 1px solid #2A1F1B;
+    border-top: 1px solid var(--dark-brown-coffe);
 
     height: calc(40vh - 120px); 
     overflow-y: auto; 
@@ -249,8 +254,8 @@ header > nav > a {
     justify-content: space-between;
     align-items: center;
 
-    border-top: 1px solid #2A1F1B;
-    border-bottom: 1px solid #2A1F1B;
+    border-top: 1px solid var(--dark-brown-coffe);
+    border-bottom: 1px solid var(--dark-brown-coffe);
 }
 
 #cart_card > .checkout_button {
@@ -263,8 +268,8 @@ header > nav > a {
     padding: 1rem 0.75rem;
     width: 100%;
 
-    background-color: #2A1F1B;
-    color: #FDFBD4;
+    background-color: var(--dark-brown-coffe);
+    color: var(--cream);
 
     border: none;
     border-radius: 5px;
@@ -283,8 +288,8 @@ header > nav > a {
     padding: 1rem 0.75rem;
     width: 100%;
 
-    background-color: #FDFBD4;
-    color: #2A1F1B;
+    background-color: var(--cream);
+    color: var(--dark-brown-coffe);
 
     border: none;
     border-radius: 5px;
@@ -336,7 +341,7 @@ header > nav > a {
     }
 
     .logo > h1 {
-        color: #FDFBD4;
+        color: var(--cream);
         font-size: 1rem;
     }
 
