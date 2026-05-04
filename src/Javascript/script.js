@@ -231,10 +231,28 @@ function menuCardButtons(item, properties) {
                     item_img: `${properties.img_path}`
                 });
             }
-    
+
+            for(let i = 0; i < orders.length; i++) {
+                if (orders[i].qty > 5) {
+                    alert(`You can only add up to 5 of this item.\nQuantity of Item: 5`);
+                    return;
+                }
+            }
+
+            if (orders.length > 10) {
+                alert("You’ve reached the maximum items.");
+                return;
+            }
+
             localStorage.setItem("orders", JSON.stringify(orders));
     
-            alert("Item added successfully");
+            for(let i = 1; i <= orders.length; i++) {
+                if (orders.length !== 10 || orders[i].qty !== 5) {
+                    alert(`Item added successfully!\nCart: ${orders.length}`);
+                    break;
+                }
+            }
+
             console.log("Added:", item);
         });
 
@@ -342,7 +360,7 @@ function addToCartPage() {
                 ${orders.map(item => `
                     <p>${item.name}</p>
                     <P>${item.qty}</p>
-                    <P>₱${item.price * item.qty}</p>
+                    <P class="subtotal">₱${item.price * item.qty}</p>
                 `).join("")}
             </div>
 
@@ -362,8 +380,6 @@ function addToCartPage() {
 
     cart_order.innerHTML = cart_order_summary;
 }
-
-
 
 
 

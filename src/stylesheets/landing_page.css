@@ -658,6 +658,7 @@ header {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
     margin-top: 1rem;
+
 }
 
 .contact-contents > .contact-left {
@@ -797,6 +798,9 @@ footer > .footer-main-content {
 .footer-main-content > .footer-contents {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    padding: 2rem;
+    border-bottom: 1px solid var(--cream);
 }
 
 .footer-contents > .footer-logo > .footer-logo-items{
@@ -897,11 +901,7 @@ footer > .footer-main-content {
 
 .footer-main-content > .footer-c {
     text-align: center;
-    padding: 1.30rem;
-
-    border-top: 2px solid white;
-
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .footer-c > p {

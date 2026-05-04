@@ -241,6 +241,12 @@ header > nav > a {
 
     height: calc(40vh - 120px); 
     overflow-y: auto; 
+
+    color: var(--dark-brown-coffe);
+}
+
+.orders_list > .subtotal {
+    font-weight: 700;
 }
 
 .orders_list > p {
@@ -257,6 +263,8 @@ header > nav > a {
     border-top: 1px solid var(--dark-brown-coffe);
     border-bottom: 1px solid var(--dark-brown-coffe);
 }
+
+
 
 #cart_card > .checkout_button {
     padding: 1rem;
