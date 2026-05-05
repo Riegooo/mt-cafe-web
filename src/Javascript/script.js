@@ -234,7 +234,7 @@ function menuCardButtons(item, properties) {
 
             for(let i = 0; i < orders.length; i++) {
                 if (orders[i].qty > 5) {
-                    alert(`You can only add up to 5 of this item.\nQuantity of Item: 5`);
+                    alert(`You can only add up to 5 of this item.\nQuantity of Item: 5/5`);
                     return;
                 }
             }
@@ -377,6 +377,10 @@ function addToCartPage() {
                 <button class="c_btn_two">Checkout with Gcash</button>
             </div>
         `;
+
+        const cart_display = document.getElementById('cart_quantity_display')
+
+        cart_display.innerHTML = `${orders.length}`
 
     cart_order.innerHTML = cart_order_summary;
 }

@@ -461,18 +461,18 @@ header {
 }
 
 .about-main-content > .about-contents {
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0 ;
 
     display: grid;
     grid-template-columns: 0.7fr 1fr;
     background-color: var(--dark-brown-coffe);
     padding: 2rem;
 
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
     animation: fade-in linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 40%; 
+
+    border-bottom: 1px solid var(--essential-cream);
 }
 
 .about-contents .about-left {
@@ -564,13 +564,13 @@ header {
 
 
 .about-main-content > .whychooseus-main-content {
-    background-color: var(--cream);
+    background-color: var(--dark-brown-coffe);
     padding: 2rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .whychooseus-main-content > .whychooseus-header > h1  {
-    color: var(--dark-brown-coffe);
+    color: var(--cream);
     animation: fade-in linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 40%; 
@@ -581,10 +581,10 @@ header {
     grid-template-columns: 1fr 0.7fr;
     padding: 10px;
     gap: 10px;
+}
 
-    animation: fade-in linear both;
-    animation-timeline: view();
-    animation-range: entry 20% cover 40%; 
+.whychoose-contents > .whychoose-left > P {
+    color: #fdfbd49f;
 }
 
 .whychoose-contents > .whychoose-right {
@@ -599,19 +599,37 @@ header {
     height: auto;
     display: block;
     border-radius: 10px;
+    background-color: var(--cream);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
 .whychoose-contents > .whychoose-left {
-    display: flex;
-    align-items: center;
+    margin-top: 2rem;
 }
 
-.whychoose-left > p {
+.whychoose-left > .whychoose-icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+.whychoose-icons > i { 
     color: var(--dark-brown-coffe);
-    font-weight: 600;
-    font-size: 1rem;
+
+    font-size: 2rem;
+
+    padding: 1rem;
+
+    background-color: var(--essential-cream);
+    border-radius: 10px;
 }
 
 
@@ -642,7 +660,7 @@ header {
 }
 
 .contact-container > .contact-main-content {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: auto;
 
     padding: 5rem;
@@ -1335,6 +1353,14 @@ footer > .footer-main-content {
 
     header {
         padding: 10px 10px;
+    }
+
+    .whychoose-left > .whychoose-icons {
+        gap: 1rem;
+    }
+
+    .whychoose-icons > i { 
+        font-size: 1rem;
     }
 }
 
