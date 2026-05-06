@@ -199,30 +199,57 @@ header > nav > a:active {
     padding: 1rem;
 }
 
-.cart-item-prices > .quantity {
-    display: flex;
+
+.cart-item-prices > .qty-btns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    gap: 8px;
-    margin-bottom: 1rem;
+    text-align: center;
+}
+.qty-btns > .addQty {
+    background-color: var(--cream);
+    border-radius: 5px;
+
+    color: var(--dark-brown-coffe);
+
+    border: 1px solid var(--btn-hover-dark-brown-coffe);
+    padding: 0.80rem;
+    transition: all ease 0.2s;
+
+    cursor: pointer;
+}
+.qty-btns > .addQty:hover {
+    background-color: var(--btn-hover-cream);
+}
+.qty-btns > .addQty:active {
+    opacity: 0.7;
 }
 
-.quantity > h2 {
-    color: var(--essential-cream);
-    font-weight: 500;
+.qty-btns > .decreaseQty {
+    background-color: var(--essential-cream);
+    border-radius: 5px;
+
+    color: var(--dark-brown-coffe);
+
+    border: 1px solid var(--btn-hover-dark-brown-coffe);
+    padding: 0.80rem;
+    transition: all ease 0.2s;
+
+    cursor: pointer;
+}
+.qty-btns > .decreaseQty:hover {
+    background-color: #f3d193;
+}
+.qty-btns > .decreaseQty:active {
+    opacity: 0.7;
 }
 
-.quantity > p {
+
+
+.qty-btns > p {
     color: var(--cream);
-    font-weight: 800;
 }
 
-.cart-item-prices > p {
-    color: var(--essential-cream);
-}
-
-.cart-item-prices > p > span {
-    color: var(--cream);
-}
 
 .cart-item > button {
     background-color: transparent;
@@ -329,6 +356,8 @@ header > nav > a:active {
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all ease 0.2s;
+
+    cursor: pointer;
 }
 .c_btn_one:hover {
     transform: translateY(-2px);
@@ -363,6 +392,8 @@ header > nav > a:active {
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all ease 0.2s;
+
+    cursor: pointer;
 }
 .c_btn_two:hover {
     transform: translateY(-2px);
@@ -382,8 +413,9 @@ header > nav > a:active {
 
 @media only screen and (max-width: 700px) {
     .main-container { 
-        padding: 5rem 2rem;
+        padding: 0rem 2rem;
     }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -440,5 +472,9 @@ header > nav > a:active {
 @media only screen and (max-width: 350px) {
     .cart-item > img {
         max-width: 100px;
+    }
+
+    #cart_card > h2 {
+        font-size: 1rem;
     }
 }

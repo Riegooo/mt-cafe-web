@@ -207,16 +207,22 @@ function menuCardButtons(item, properties) {
             e.stopPropagation();
     
             let existing = orders.find(i => i.name === item);
-    
-            if (existing) {
-                existing.qty += 1;
+
+            let confim_cart = confirm("Do you want to add this item?") ;
+
+            if (confim_cart) {
+                if (existing) {
+                    existing.qty += 1;
+                } else {
+                    orders.push({
+                        name: item,
+                        price: properties.price,
+                        qty: 1,
+                        item_img: `${properties.img_path}`
+                    });
+                }
             } else {
-                orders.push({
-                    name: item,
-                    price: properties.price,
-                    qty: 1,
-                    item_img: `${properties.img_path}`
-                });
+                return;
             }
 
             for(let i = 0; i < orders.length; i++) {
@@ -239,6 +245,7 @@ function menuCardButtons(item, properties) {
                     break;
                 }
             }
+            console.log(orders.length);
 
             console.log("Added:", item);
         });

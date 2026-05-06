@@ -30,12 +30,15 @@ function addToCartPage() {
                 </div>
 
                 <div class="cart-item-prices">
-                    <div class="quantity"> 
-                        <h2>Quantity: </h2>
+                    <div class="qty-btns">
+                        <button class="addQty">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
                         <p>${item.qty}</p>
+                        <button class="decreaseQty">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
                     </div>
-
-                    <p>Total Price: <span>₱${item.price * item.qty}</span></p>
                 </div>
 
                 <button class="delete_cart">
@@ -46,20 +49,24 @@ function addToCartPage() {
         price_total_compute += Number(item.price) * item.qty;
     });
 
-
     container.innerHTML = cart_card;
 
     const deleteButtons = container.querySelectorAll(".delete_cart");
 
     deleteButtons.forEach((btn, index) => {
         btn.addEventListener("click", () => {
-
-            orders.splice(index, 1);
-            localStorage.setItem("orders", JSON.stringify(orders));
-            
-            addToCartPage();
+            let delete_item = confirm("Delete this item?");
+            if (delete_item) {
+                orders.splice(index, 1);
+                localStorage.setItem("orders", JSON.stringify(orders));
+                
+                updateCart();
+            } else {
+                return;
+            }
         });
     });
+
 
 
     console.log("total price current: " + price_total_compute);
@@ -109,7 +116,34 @@ function addToCartPage() {
     cart_order.innerHTML = cart_order_summary;
 }
 
+function updateCart() {
+    localStorage.setItem("orders", JSON.stringify(orders));
+    addToCartPage();
+}
 
+document.addEventListener("click", (e) => {
+    const cartItem = e.target.closest(".cart-item");
+    if (!cartItem) return;
+
+    const index = Number(cartItem.dataset.index);
+
+    if (e.target.closest(".addQty")) {
+        if (orders[index].qty < 5) {
+            orders[index].qty += 1;
+        } else {
+            alert("You can only add up to 5 of this item.\nQuantity of Item: 5/5.");
+        }
+        updateCart();
+
+    } else if (e.target.closest(".decreaseQty")) {
+        if (orders[index].qty > 1) {
+            orders[index].qty -= 1;
+        } else if (orders[index].qty === 1) {
+            alert("This is the last quantity.\nCannot decrease quantity. Please remove the item instead.");
+        } 
+        updateCart();
+    }
+});
 
 
 function checkout() {
