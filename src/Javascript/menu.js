@@ -16,11 +16,6 @@ if (menuTog && navLinks && iconMenu) {
     });
 }
 
-
-
-
-
-
 function setupMenuToggle(item) {
     const menu_card = document.getElementById(encodeURIComponent(item));
     if (!menu_card) return;
@@ -162,8 +157,11 @@ async function getMenuList() {
             setupMenuToggle(item);
 
             menuCardButtons(item, properties);
+
         }
     }
+
+    
 
     createMenuCards('hot_beverage');
 

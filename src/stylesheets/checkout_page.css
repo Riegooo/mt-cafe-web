@@ -79,7 +79,7 @@ header > nav > a:active {
 
 .main-container {
     padding: 1rem;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: auto;
 }
 
@@ -133,8 +133,14 @@ header > nav > a:active {
     gap: 1rem;
     margin-top: 0.80rem;
 
-    border: 1px solid black;
+    border: 1px solid var(--dark-brown-coffe);
     padding: 1rem;
+
+    border-radius: 5px;
+
+
+    color: var(--dark-brown-coffe);
+
 } 
 
 .input-card > input {
@@ -143,6 +149,10 @@ header > nav > a:active {
 
     width: 100%;
 }   
+
+.input-card > input::placeholder {
+    color: var(--dark-brown-coffe);
+}
 
 .input-card > input:focus {
     outline: none;
@@ -184,13 +194,46 @@ header > nav > a:active {
     background-color: var(--cream);
 }
 
+.left > form > .place-order-btn {
+    margin-top: 1rem;
+}
+
+.place-order-btn > button {
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    margin-top: 1rem;
+
+    padding: 1rem 0.75rem;
+    background-color: var(--dark-brown-coffe);
+    color: var(--essential-cream);
+    width: 100%;
+
+    border: none;
+
+    border-radius: 5px;
+}
+
+.place-order-btn > button > .btn {
+    display: flex;
+    align-items: center;
+    gap: 0.80rem;
+
+
+    width: 100%;
+}
+
 
 .checkout-contents > .right > .headers{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: space-between;
 
     padding: 1rem 2rem;
+
+    text-align: center;
 }
 
 .right > .order-container > #cart_list {
@@ -237,4 +280,134 @@ header > nav > a:active {
     padding: 1rem;
 
     border-top: 1px solid black;
+}
+
+
+
+
+footer {
+    padding: 2rem;
+    background-color: var(--dark-brown-coffe);
+}
+
+footer > .footer-main-content {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.footer-main-content > .footer-contents {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    padding: 2rem;
+    border-bottom: 1px solid var(--cream);
+}
+
+.footer-contents > .footer-logo > .footer-logo-items{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo-items > img {
+    height: 50px;
+    width: 50px;
+}
+
+.footer-logo-items > h1 {
+    font-size: 1.50rem;
+    color: var(--essential-cream);
+}
+
+.footer-logo > .footer-logo-text {
+    color: var(--cream);
+}
+
+
+
+.footer-header {
+    color: var(--essential-cream);
+}
+
+.footer-header > h1 {
+    font-size: 1.50rem;
+}
+
+.footer-contents > .footer-contact-info > .footer-contact-text {
+    margin-top: 10px;
+}
+
+.footer-contents > .footer-contact-info > .footer-contact-text > .footer-contact-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.footer-contact-card > p {
+    color: #fdfbd4a2;
+    cursor: pointer;
+
+    transition: all ease 0.3s;
+}
+
+.footer-contact-card > p:hover {
+    color: var(--essential-cream);
+}
+
+
+
+.footer-contents > .footer-quicklinks > .footer-nav-links > li {
+    list-style: none;
+}
+
+.footer-nav-links > li > a{
+    text-decoration: none;
+    color: var(--cream);
+
+    transition: all ease 0.3s;
+}
+
+.footer-nav-links > li > a:hover{
+    color: var(--essential-cream);
+}
+
+
+.footer-contents > .footer-social > p {
+    color: var(--cream);
+}
+
+.footer-social > .footer-social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+}
+
+.footer-social-icons > a {
+    text-decoration: none;
+}
+
+.footer-social-icons > a > i {
+    font-size: 1.50rem;
+    transition: all ease 0.3s;
+    color: #fdfbd47e;
+}
+.footer-social-icons > a > i:hover {
+    font-size: 1.50rem;
+    color: #ddb160;
+}
+
+
+.footer-main-content > .footer-c {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer-c > p {
+    color: var(--cream);
+}
+
+.footer-c > p > span {
+    color: var(--essential-cream);
 }

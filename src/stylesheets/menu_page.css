@@ -16,7 +16,7 @@
 
 body {
     min-height: 100vh;
-    overflow: hidden;
+    overflow-y: auto;
     background-color: var(--essential-cream);
 }
 
@@ -223,6 +223,10 @@ body {
     justify-items: center;
 }
 
+.menu-cards:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 
 @keyframes fadeRight {
     from {
@@ -284,31 +288,29 @@ body {
 
 .menu-cards > .click_image_info {
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
+        inset: 0;
 
-        background: rgba(42, 31, 27, 0.977);
+        background: rgba(42, 31, 27, 0.97);
         backdrop-filter: blur(5px);
 
         display: flex;
-        flex-direction: column;
-        justify-content: center; 
+        justify-content: center;
         align-items: center;
 
-        gap: 30px;
+        opacity: 0;
+        visibility: hidden;
 
-        display: none;
-        transition: all ease 0.2;
+        transition: 0.3s ease;
 
         pointer-events: none;
+
+        z-index: 9999;
 }
 
 .menu-cards > .click_image_info.active {
-        transform: translateY(0);
-        pointer-events: auto;
-        display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .click_image_info > .info-container {
@@ -471,6 +473,8 @@ body {
     transition: all ease 0.2s;
 
     color: var(--cream);
+
+    cursor: pointer;
 }
 
 .menu-item-info > .menu-item-price > i:hover {
@@ -497,6 +501,8 @@ body {
     color: var(--dark-brown-coffe);
     font-weight: 700;
     transition: all ease 0.3s;
+
+    cursor: pointer;
 }
 
 .menu-item-buy > button:hover {
