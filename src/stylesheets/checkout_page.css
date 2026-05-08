@@ -1,0 +1,240 @@
+:root {
+    --essential-cream: #DCB66F;
+    --cream: #FDFBD4; 
+    --dark-brown-coffe: #2A1F1B;
+    --btn-hover-dark-brown-coffe: #3b2e29;
+    --btn-hover-cream: #e9e8cd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--cream);
+}
+
+header {
+    padding: 10px 5rem;
+    backdrop-filter: blur(20px);
+    background-color: rgba(32, 33, 26, 0.9);
+    z-index: 1000;
+}
+
+header > nav {
+    max-width: 1600px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > nav > .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo > img {
+    height: 50px;
+    width: 50px;
+}
+
+.logo > h1 {
+    color: var(--cream);
+    font-size: 1.5rem;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: var(--dark-brown-coffe);
+    background-color: var(--essential-cream);
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px var(--cream);
+}
+header > nav > a:hover {
+    transform: translateY(2px);
+    background-color: #d2b47c;
+    box-shadow: 0 0px var(--cream);
+}
+header > nav > a:active {
+    transform: translateY(2px);
+    background-color: #d2b47c;
+    box-shadow: 0 0px var(--cream);
+
+    opacity: 0.7;
+}
+
+
+.main-container {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-container > .checkout-header {
+    text-align: center;
+}
+
+.main-container > .checkout-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.checkout-contents > .left,.right {
+    background-color: var(--btn-hover-cream);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    
+    padding: 1rem;
+}
+
+.left > .left-header, .right > .right-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--dark-brown-coffe);
+}
+
+.left > .left-header > i, 
+.right > .right-header > i {
+    font-size: 1.50rem;
+
+    padding: 1rem;
+    color: var(--dark-brown-coffe);
+    background-color: var(--essential-cream);
+
+    border-radius: 1rem;
+}
+
+.left > form {
+    padding: 1rem;
+}
+
+.left > form > .input-card {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+    margin-top: 0.80rem;
+
+    border: 1px solid black;
+    padding: 1rem;
+} 
+
+.input-card > input {
+    background-color: transparent;
+    border: none;
+
+    width: 100%;
+}   
+
+.input-card > input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.left > form > .left-order-type {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.left > form > .left-order-type > button {
+    padding: 1rem;
+}
+
+.left-order-type > .btn-one {
+    background-color: var(--dark-brown-coffe);
+    color: var(--cream);
+
+    border: none;
+    border-radius: 5px;
+}
+
+.left-order-type > .btn-two {
+    background-color: var(--cream);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.left > form > .left-message > textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    background-color: var(--cream);
+}
+
+
+.checkout-contents > .right > .headers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem 2rem;
+}
+
+.right > .order-container > #cart_list {
+    height: calc(60vh - 120px); 
+    overflow-y: auto; 
+
+    border-top: 1px solid var(--dark-brown-coffe);
+}
+
+.right > .order-container > #cart_list > .item-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+
+    padding: 1rem;
+
+    color: var(--dark-brown-coffe);
+
+    scrollbar-color: var(--essential-cream) var(--dark-brown-coffe);
+}
+
+.item-info > .img {
+    display: flex;
+    align-items: center ; 
+
+    gap: 0.70rem;
+}
+
+.img > p {
+    text-align: left;
+}
+
+.item-info > .img > img {
+    width: 30px;
+    height: 30px;
+}
+
+.order-container > #total_price {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 1rem;
+
+    border-top: 1px solid black;
+}

@@ -3,9 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>mT Cafe - Checkout</title>
+    <link rel="stylesheet" href="../stylesheets/checkout_page.css   ">
+    <link rel="icon" type="image/x-icon" href="../images/mt-cafe-logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&family=Poppins:wght@100..900&family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <h1>CHECK OUT TEST</h1>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../images/mt-cafe_logo-removebg-preview.png" alt="">
+                <h1>mT Cafe</h1>
+            </div>
+
+            <a href="./usercart_page.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="checkout-header">
+            <h1>CHECKOUT</h1>
+            <p>Please fill in your details and review your orders.</p>
+        </div>
+        <div class="checkout-contents">
+            <div class="left">
+                <div class="left-header">
+                    <i class="fa-regular fa-user"></i>
+                    <div class="left-details">
+                        <h2>CUSTOMER DETAILS</h2>
+                        <p>Enter your information below</p>
+                    </div>
+                </div>
+
+                <form action="">
+                    <label for="">Full Name</label>
+                    <div class="input-card">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" placeholder="Juan Dela Cruz" required>
+                    </div>
+
+                    <label for="">Phone Number</label>
+                    <div class="input-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <input type="number" placeholder="Enter your Phone Number" required>
+                    </div>
+
+                    <label for="">Order Type</label>
+                    <div class="left-order-type">
+                        <button class="btn-one">
+                            <i class="fa-solid fa-mug-hot"></i>
+                            <span>Dine-In</span>
+                        </button>
+
+                        <button class="btn-two">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>Takeout</span>
+                        </button>
+                    </div>
+
+                    <div class="left-message">
+                        <label for="">Special Notes (Optional)</label><br>
+                        <textarea rows="5" name="" id="" placeholder="Add any special notes or requests..."></textarea>
+                    </div>
+                </form>
+            </div>
+
+            <div class="right">
+                <div class="right-header">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <div class="right-details"> 
+                        <h2>ORDER SUMMARY</h2>
+                        <p>Review your items</p>
+                    </div>
+                </div>
+
+                <div class="headers">
+                        <h3>Item</h3>
+                        <h3>Quantity</h3>
+                        <h3>Subtotal</h3>
+                </div>
+
+                <div class="order-container">
+                    <div id="cart_list">
+
+                    </div>
+
+                    <div id="total_price">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Javascript/checkout.js"></script>
 </body>
 </html>

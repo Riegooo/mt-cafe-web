@@ -157,16 +157,25 @@ header {
 
 
 .Home-texts > h1 {
-    font-size: 8rem;
+    font-size: clamp(5rem, 3.909rem + 5.45vw, 8rem);
     line-height: 1.1;
     color: var(--cream);
 
     animation: fadeRight 0.9s ease-out forwards;
+
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    
 }
 
 .Home-texts > h1 > span {
     display: block;
     color: var(--essential-cream);
+
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .Home-texts > p {
