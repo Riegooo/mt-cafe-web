@@ -167,22 +167,45 @@ header > nav > a:active {
     margin-bottom: 1rem;
 }
 
-.left > form > .left-order-type > button {
-    padding: 1rem;
-}
 
-.left-order-type > .btn-one {
+.left-order-type > .Dine-in > label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
     background-color: var(--dark-brown-coffe);
     color: var(--cream);
 
     border: none;
     border-radius: 5px;
+
+    min-height: 70px;
+    min-width: 150px;
 }
 
-.left-order-type > .btn-two {
+.Dine-in > input:checked + .radio_label,
+.takeout > input:checked + .radio_label {
+    background-color: var(--essential-cream);
+    color: var(--dark-brown-coffe);
+}
+.Dine-in > input,
+.takeout > input {
+    display: none;
+}
+
+.left-order-type > .takeout  > label{
     background-color: var(--cream);
     border: 1px solid black;
     border-radius: 5px;
+
+    min-height: 70px;
+    min-width: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .left > form > .left-message > textarea {
