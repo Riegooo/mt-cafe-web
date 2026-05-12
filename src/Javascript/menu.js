@@ -187,15 +187,32 @@ function menuCardButtons(item, properties) {
     if (buy_btn) {
         buy_btn.addEventListener("click", (e) => {
             e.stopPropagation();
-    
-            total += parseInt(properties.price);
-            localStorage.setItem("total", total);
-    
-            if (total_display) {
-                total_display.innerHTML = `BUY : ${total}`;
+
+            const buyConfirmation = confirm("Do you want to buy this item?");
+
+            let ifBuyExists = orders.find(i => i.name === item);
+
+            if (buyConfirmation) {
+                if (ifBuyExists) {
+                    ifBuyExists.qty += 1;
+                } else {
+                    orders.push({
+                        name: item,
+                        price: properties.price,
+                        qty: 1,
+                        item_img: `${properties.img_path}`
+                    });
+
+                    localStorage.setItem("orders", JSON.stringify(orders));
+
+                    window.location = '../pages/checkout_page.html';
+
+                    console.log("Buy button successfully, proceed to checkout");
+                }
+            } else {
+                return;
             }
-    
-            console.log("UPDATED:", total);
+
         });
     }
 
