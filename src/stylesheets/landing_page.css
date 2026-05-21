@@ -7,18 +7,18 @@
     --dark-brown-coffe: #2A1F1B;
 }
 
-
 @keyframes fadeRight {
     from {
         opacity: 0;
         transform: translateX(-20px); 
+        z-index: -1;
     }
     to {
         opacity: 1;
         transform: translateX(0);
+        z-index: -1;
     }
 }
-
 
 
 * {
@@ -304,16 +304,6 @@ header {
     box-shadow: 0 14px 36px rgba(7,30,44,0.13);
 }
 
-@keyframes fade-in {
-    from { 
-        opacity: 0; 
-        transform: translateY(20px); 
-    }
-    to { 
-        opacity: 1; 
-        transform: translateY(0); 
-    }
-}
 
 .featured-card > .item-box {
     width: 100%;

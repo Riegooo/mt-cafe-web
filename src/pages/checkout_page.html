@@ -58,7 +58,7 @@
                     <label for="">Order Type</label>
                     <div class="left-order-type">
                         <div class="Dine-in">
-                            <input type="radio" name="value" id="dinein">
+                            <input type="radio" name="orderType" id="dinein" value="Dine-in">
                             <label for="dinein" class="radio_label">
                                 Dine-In
                                 <i class="fa-solid fa-mug-hot"></i>
@@ -66,7 +66,7 @@
                         </div>
 
                         <div class="takeout">
-                            <input type="radio" name="value" id="takeout">
+                            <input type="radio" name="orderType" id="takeout" value="Takeout">
                             <label for="takeout" class="radio_label">
                                 Takeout
                                 <i class="fa-solid fa-bag-shopping"></i>
@@ -81,12 +81,12 @@
 
 
                     <div class="place-order-btn">
-                        <button>
+                        <button id="placeOrder">
                             <div class="btn">
                                 <i class="fa-solid fa-lock"></i>
                                 <span>Place Order</span>
                             </div>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i class="fa-solid fa-arrplaceOrder()ow-right"></i>
                         </button>
                     </div>
 
@@ -117,6 +117,58 @@
 
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="payment-container">
+        <div class="payment-content">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="payment-header">
+                <h1>PAYMENT METHOD</h1>
+                <p>Select a payment method to continue.</p>
+            </div>
+
+            <div class="payment-method-list">
+                <div class="payment-card">
+                    <input type="radio" name="paymentMethod" id="gcash" value="Gcash">
+                    <label for="gcash" class="radio_label">
+                        <div class="p-title">
+                            <h2>Gcash</h2>
+                            <p>Pay using Gcash</p>
+                        </div>
+                        <i class="fa-solid fa-wallet"></i>
+                    </label>
+                </div>
+
+                <div class="payment-card">
+                    <input type="radio" name="paymentMethod" id="maya" value="Maya">
+                    <label for="maya" class="radio_label">
+                        <div class="p-title">
+                            <h2>Maya</h2>
+                            <p>Pay using Maya</p>
+                        </div>
+                        <i class="fa-solid fa-wallet"></i>
+                    </label>
+                </div>
+
+                <div class="payment-card">
+                    <input type="radio" name="paymentMethod" id="cash" value="Cash">
+                    <label for="cash" class="radio_label">
+                        <div class="p-title">
+                            <h2>Cash</h2>
+                            <p>Pay in cash at the Counter</p>
+                        </div>
+                        <i class="fa-solid fa-wallet"></i>
+                    </label>
+                </div>
+    
+            </div>
+
+            <div class="payment-btn">
+                <button id="continueBtn">Continue
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
             </div>
         </div>
     </div>

@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">    
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -70,7 +72,7 @@
             <h1>Featured</h1>
             <p>Discover our best-selling and signature coffee drinks.</p>
         </div>
-        <div class="featured-main-content">
+        <div class="featured-main-content" data-aos="zoom-in">
             <div class="featured-card">
                 <div class="item-box">
                     <img src="./images/featured-images/Matcha-Latte.png" alt="">
@@ -104,7 +106,7 @@
 
                     <div class="item-price">
                         <p>₱150</p>
-                        <a href="">
+                        <a href="./pages/menu_page.html">
                             ORDER
                         </a>
                     </div>
@@ -342,6 +344,11 @@
     </footer>
 
     <script src="./Javascript/landing_page.js">
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
