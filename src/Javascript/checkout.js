@@ -86,7 +86,7 @@ function popUpPaymentMethod() {
             return;
         }
 
-        let userInfo = JSON.parse(localStorage.getItem("userInfo")) || [];
+        const userInfo = JSON.parse(localStorage.getItem("userInfo")) || [];
 
         userInfo.push({
             fullName: document.getElementById('fname').value.trim(),

@@ -1,0 +1,66 @@
+:root {
+    --essential-cream: #DCB66F;
+    --cream: #FDFBD4; 
+    --dark-brown-coffe: #2A1F1B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: var(--cream);
+    min-height: 100vh;
+}
+
+.success-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: #2ecc71;
+    margin-bottom: 1rem;
+}
+
+.success-card h1 {
+    color: var(--dark-brown-coffe);
+    margin-bottom: 1rem;
+}
+
+.success-card p {
+    color: gray;
+    margin-bottom: 2rem;
+}
+
+.success-card button {
+    background: var(--dark-brown-coffe);
+    color: var(--cream);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.success-card button:hover {
+    background: #3b2e29;
+    transform: translateY(-2px);
+}

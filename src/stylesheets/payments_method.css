@@ -1,0 +1,275 @@
+:root {
+    --essential-cream: #DCB66F;
+    --cream: #FDFBD4; 
+    --dark-brown-coffe: #2A1F1B;
+    --btn-hover-dark-brown-coffe: #3b2e29;
+    --btn-hover-cream: #e9e8cd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--cream);
+}
+
+header {
+    padding: 10px 5rem;
+    backdrop-filter: blur(20px);
+    background-color: rgba(32, 33, 26, 0.9);
+    z-index: 1000;
+}
+
+header > nav {
+    max-width: 1600px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > nav > .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo > img {
+    height: 50px;
+    width: 50px;
+}
+
+.logo > h1 {
+    color: var(--cream);
+    font-size: 1.5rem;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: var(--dark-brown-coffe);
+    background-color: var(--essential-cream);
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    box-shadow: 0 2px var(--cream);
+
+    transition: 0.3s ease;
+}
+
+header > nav > a:hover {
+    transform: translateY(2px);
+    background-color: #d2b47c;
+    box-shadow: 0 0px var(--cream);
+}
+
+.payment-wrapper {
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+}
+
+.payment-card {
+    width: 100%;
+    max-width: 550px;
+
+    background-color: var(--btn-hover-cream);
+
+    border-radius: 25px;
+
+    padding: 2rem;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.payment-top {
+    text-align: center;
+}
+
+.gcash-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: auto auto 1rem;
+
+    border-radius: 50%;
+
+    background-color: rgba(0, 125, 255, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gcash-icon > i {
+    font-size: 3.5rem;
+    color: #007dff;
+}
+
+.payment-top > h1 {
+    color: var(--dark-brown-coffe);
+    font-size: 2rem;
+}
+
+.payment-top > p {
+    color: gray;
+    margin-top: .5rem;
+}
+
+.qr-wrapper {
+    margin: 2rem 0;
+
+    background-color: var(--cream);
+
+    padding: 2rem;
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.qr-wrapper > img {
+    width: 260px;
+    height: 260px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    border: 6px solid white;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.scan-text {
+    margin-top: 1rem;
+    color: gray;
+    font-size: .95rem;
+}
+
+.payment-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+}
+
+.payment-box {
+    background-color: var(--cream);
+
+    padding: 1rem;
+
+    border-radius: 12px;
+}
+
+.payment-box > p {
+    color: gray;
+    font-size: .9rem;
+    margin-bottom: .4rem;
+}
+
+.payment-box > h2 {
+    color: var(--dark-brown-coffe);
+    font-size: 1.3rem;
+}
+
+.payment-note {
+    background-color: #fff7e7;
+
+    border-left: 5px solid var(--essential-cream);
+
+    padding: 1rem;
+
+    border-radius: 10px;
+
+    margin-bottom: 2rem;
+}
+
+.payment-note > p {
+    color: #7a5c2e;
+    font-size: .95rem;
+}
+
+.payment-btn {
+    width: 100%;
+
+    padding: 1rem;
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: var(--dark-brown-coffe);
+    color: var(--cream);
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+
+    transition: 0.3s ease;
+}
+
+.payment-btn:hover {
+    background-color: var(--btn-hover-dark-brown-coffe);
+    transform: translateY(-2px);
+}
+
+.payment-btn:active {
+    transform: scale(.98);
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 1rem;
+    }
+
+    .payment-wrapper {
+        padding: 1rem;
+    }
+
+    .payment-card {
+        padding: 1.5rem;
+    }
+
+    .payment-top > h1 {
+        font-size: 1.7rem;
+    }
+
+    .qr-wrapper > img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .payment-details {
+        grid-template-columns: 1fr;
+    }
+
+    .logo > h1 {
+        font-size: 1.2rem;
+    }
+
+}
