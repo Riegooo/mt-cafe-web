@@ -22,29 +22,29 @@ function userInfoPayment() {
     let confirm_card = "";
     let user_order = "";
 
-    userInfo.forEach(element => {
+    userInfo.forEach(item => {
 
         confirm_card += `
             <div class="user_info_wrapper">
 
                 <div class="user_card">
                     <p>Customer</p>
-                    <h2>${element.fullName}</h2>
+                    <h2>${item.fullName}</h2>
                 </div>
 
                 <div class="user_card">
                     <p>Phone Number</p>
-                    <h2>${element.phoneNum}</h2>
+                    <h2>${item.phoneNum}</h2>
                 </div>
 
                 <div class="user_card">
                     <p>Order Type</p>
-                    <h2>${element.orderType}</h2>
+                    <h2>${item.orderType}</h2>
                 </div>
 
                 <div class="user_card">
                     <p>Payment Method</p>
-                    <h2>${element.paymentMethod}</h2>
+                    <h2>${item.paymentMethod}</h2>
                 </div>
 
             </div>
@@ -61,16 +61,16 @@ function userInfoPayment() {
         </div>
     `;
 
-    orders.forEach(element => {
+    orders.forEach(item => {
 
-        let subtotal = Number(element.price) * element.qty;
+        let subtotal = Number(item.price) * item.qty;
 
         orders_total_amount += subtotal;
 
         user_order += `
             <div class="order_list">
-                <h3>${element.name}</h3>
-                <h3>${element.qty}</h3>
+                <h3>${item.name}</h3>
+                <h3>${item.qty}</h3>
                 <h3>₱${subtotal}</h3>
             </div>
         `;

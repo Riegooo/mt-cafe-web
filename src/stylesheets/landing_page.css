@@ -724,7 +724,8 @@ header {
 
 
 .feedback-main-content > .customer-share {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-content: center;
 
     justify-content: center;
@@ -767,6 +768,10 @@ header {
     color: var(--dark-brown-coffe);
 
     border-radius: 1rem;
+
+    text-align: center;
+
+    justify-content: center;
 }
 
 .customer-share > a > h2 {
@@ -1187,6 +1192,10 @@ footer > .footer-main-content {
     .about-header > h1,
     .contact-header > h1 {
         font-size: 3rem;
+    }
+
+    .feedback-main-content > .customer-share {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 

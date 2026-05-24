@@ -133,7 +133,7 @@ document.addEventListener("click", (e) => {
         } else {
             alert("You can only add up to 5 of this item.\nQuantity of Item: 5/5.");
         }
-        updateCart();
+        updateCart(); 
 
     } else if (e.target.closest(".decreaseQty")) {
         if (orders[index].qty > 1) {
