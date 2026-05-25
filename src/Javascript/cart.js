@@ -112,7 +112,6 @@ function addToCartPage() {
         const cart_display = document.getElementById('cart_quantity_display')
 
         cart_display.innerHTML = `${orders.length}`
-
     cart_order.innerHTML = cart_order_summary;
 }
 
